@@ -46,6 +46,9 @@ $distro: "Distro";
 .bg-lpink {
   background: $lpink;
 }
+.ff-distro {
+  font-family: $distro;
+}
 
 .animated {
   -webkit-animation-duration: 1.2s;

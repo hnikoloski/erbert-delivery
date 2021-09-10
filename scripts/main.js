@@ -68,8 +68,18 @@ $(document).ready(function () {
   if ($(".cta-tabs-wrapper").length) {
     $(".cta-tabs-wrapper .nav-tabs li a").on("click", function () {
       let themeColor = $(this).attr("data-theme-color");
-      $(".cta-tabs-wrapper .tab-content").attr("class", "tab-content"); //Clear theme classes
-      $(".cta-tabs-wrapper .tab-content").addClass(themeColor);
+      $(".cta-tabs-wrapper .tab-content, .secondary-tabs .tab-content").attr(
+        "class",
+        "tab-content"
+      ); //Clear theme classes
+      $(
+        ".cta-tabs-wrapper .tab-content, .secondary-tabs .tab-content"
+      ).addClass(themeColor);
+      // Support For secondary tabs
+      let tabSelector = $(this).attr("href");
+      let activeTabClasses = "in fade show active";
+      $(".tab-pane").removeClass(activeTabClasses);
+      $(tabSelector).addClass(activeTabClasses);
     });
   }
   // User Change info
@@ -112,6 +122,12 @@ $(document).ready(function () {
         parentContainer.removeClass("waiting");
         parentContainer.find(".delete-confrimation").hide();
       }
+    });
+  }
+  if ($(".add-to-fav").length) {
+    $(".add-to-fav").on("click", function (e) {
+      e.preventDefault();
+      $(this).toggleClass("active");
     });
   }
   //Mob Settings

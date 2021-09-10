@@ -1,0 +1,22 @@
+.login-tabs {
+  .nav-tabs {
+    li {
+      a {
+        span {
+          &:after {
+            width: 0;
+            background: $orange;
+            transition: 0.3s;
+          }
+        }
+        &.active {
+          span {
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
