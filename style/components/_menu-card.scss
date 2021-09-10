@@ -1,0 +1,186 @@
+.menu-card {
+  @include borderRadius(278rem);
+  background: $lime;
+  background-image: url("../../assets/img/decorations/card-pattern-bg.svg");
+  @include bg-props(cover, center, no-repeat);
+  width: 2361rem;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 222rem;
+  box-shadow: 0 56rem 93rem rgba(0, 0, 0, 0.13);
+  .item-specs {
+    position: relative;
+    ul {
+      padding-top: 148rem;
+      position: relative;
+      left: -65rem;
+      li {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        align-content: center;
+        flex-wrap: wrap;
+        &:not(:last-of-type) {
+          margin-bottom: -25rem;
+        }
+        .icon-wrap {
+          width: 417rem;
+          height: 417rem;
+          padding: 74rem;
+          @include borderRadius(50%);
+          background: $brown;
+          z-index: 2;
+          img {
+            @include fullSizeImg();
+          }
+        }
+        .text-wrap {
+          background: $green;
+          width: 796rem;
+          padding: 0 28rem 0 231rem;
+          min-width: 824rem;
+          height: 213rem;
+          line-height: 213rem;
+          z-index: 1;
+          position: relative;
+          left: -185rem;
+          @include borderRadius(213rem);
+          box-shadow: 56rem 56rem 93rem rgba(0, 0, 0, 0.29);
+          span {
+            font-size: 93rem;
+            color: #fff;
+            font-weight: $medium;
+            text-transform: uppercase;
+            display: block;
+          }
+        }
+      }
+    }
+    .featured-img {
+      width: 1972rem;
+      height: 1972rem;
+      position: absolute;
+      top: -148rem;
+      right: -231rem;
+      img {
+        @include fullSizeImg();
+      }
+    }
+  }
+  .item-description {
+    padding: 0 213rem;
+    color: #fff;
+    margin-bottom: 148rem;
+    h2 {
+      font-size: 417rem;
+      font-family: $distro;
+      font-weight: $bold;
+      color: inherit;
+    }
+    h3 {
+      color: $brown;
+      font-weight: $bold;
+      font-size: 185rem;
+      margin-bottom: 65rem;
+    }
+    p {
+      font-size: 111rem;
+      color: inherit;
+      line-height: 1.16666667;
+    }
+  }
+  .item-price-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 0 231rem;
+    margin-bottom: 193rem;
+    .price {
+      font-size: 241rem;
+      font-family: $distro;
+      font-weight: $bold;
+      color: #fff;
+    }
+    span {
+      font-size: 139rem;
+      font-family: $distro;
+      font-weight: $bold;
+      color: #fff;
+      background: $green;
+      padding: 0 148rem;
+      height: 213rem;
+      line-height: 213rem;
+      width: fit-content;
+      @include borderRadius(213rem);
+      box-shadow: 37rem 37rem 74rem rgba(0, 0, 0, 0.29);
+    }
+  }
+  .badge-wrap {
+    .img-wrapper {
+      width: 972rem;
+      height: 528rem;
+      margin: 0 auto;
+      filter: drop-shadow(
+        55.545269rem 55.545269rem 185.150898rem rgba(0, 0, 0, 0.16)
+      );
+      img {
+        @include fullSizeImg();
+      }
+    }
+  }
+  .add-to-cart {
+    position: absolute;
+    right: -93rem;
+    bottom: -185rem;
+  }
+  &-single-dish {
+    width: 3036.474727rem;
+    background: #fff;
+    .item-specs {
+      margin-bottom: 148.120718rem;
+      .badge-wrap {
+        height: calc(2621.736715rem - 601.740418rem);
+        .img-wrapper {
+          position: absolute;
+          z-index: 9;
+          margin: 0;
+          bottom: 0;
+          left: 416.58952rem;
+        }
+      }
+      .featured-img {
+        @include borderRadius(50%);
+        box-shadow: 277.726347rem 277.726347rem 277.726347rem
+          rgba(0, 0, 0, 0.14);
+        width: 2665.062026rem;
+        height: 2621.736715rem;
+        top: -601.740418rem;
+      }
+    }
+    .item-description {
+      max-width: 2684.688021rem;
+      color: $brown;
+    }
+    .item-price-wrap {
+      justify-content: flex-start;
+      margin-bottom: 0;
+      .promo-price {
+        color: $brown;
+        text-decoration: line-through;
+        font-size: 148.120718rem;
+        font-weight: $bold;
+        display: block;
+        width: 100%;
+      }
+      .price {
+        color: $orange;
+        font-size: 240.696167rem;
+        font-weight: $bold;
+        margin-right: 148.120718rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+#splashModal {
+  .modal-dialog {
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(2.5px);
+    -webkit-backdrop-filter: blur(2.5px);
+    max-width: 100%;
+    .modal-content {
+      position: relative;
+      z-index: 99;
+      width: 3045.732272rem;
+      margin: 0 auto;
+      @include borderRadius(277.726347rem);
+      border: 0 solid transparent;
+      box-shadow: 138.863173rem 138.863173rem 462.877245rem rgba(0, 0, 0, 0.1);
+      padding: 324.014071rem 319.385299rem 0 319.385299rem;
+      background: #fff;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 101%;
+        background-color: #fff;
+        background-image: url("../../assets/img/decorations/pop-pattern.svg");
+        @include bg-props(cover, center, no-repeat);
+        left: 0;
+        top: 0;
+        @include borderRadius(324.014071rem);
+        z-index: -9;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: 2851.323829rem;
+        height: 897.981855rem;
+        background: $green;
+        @include borderRadius(324.014071rem);
+        bottom: -74.060359rem;
+        @include hor-center();
+        z-index: -99;
+      }
+      .logo-wrapper {
+        width: 722.088502rem;
+        height: 657.285688rem;
+        margin: 0 auto 175.893353rem auto;
+        img {
+          @include fullSizeImg();
+        }
+      }
+      p {
+        font-size: 194.408443rem;
+        font-weight: $bold;
+        letter-spacing: 0.05em;
+        color: $green;
+        text-align: center;
+        font-family: $distro;
+        margin-bottom: 231.438622rem;
+      }
+      h4 {
+        color: $orange;
+        font-size: 194.408443rem;
+        font-weight: $bold;
+        margin-bottom: 74.060359rem;
+        text-align: center;
+        font-family: $distro;
+      }
+      .formated-inputs {
+        margin-bottom: 601.740418rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        input {
+          border: 1px solid #eaeaea;
+          @include borderRadius(92.575449rem);
+          box-shadow: 0px 55.545269rem 101.832994rem rgba(0, 0, 0, 0.16);
+          width: 425.847065rem;
+          height: 555.452694rem;
+          font-size: 222.181078rem;
+          font-family: $distro;
+          color: $green;
+          text-align: center;
+          font-weight: $bold;
+        }
+      }
+      .do-btn {
+        position: absolute;
+        bottom: 0;
+        @include hor-center();
+        width: 1296.056286rem;
+        font-size: 111.090539rem;
+        font-weight: $bold;
+        padding: 101.832994rem 0;
+        bottom: -166.635808rem;
+        display: block;
+      }
+    }
+  }
+}
+#addAddressModal,
+#addPaymentModal {
+  .modal-content {
+    width: 3054.989817rem;
+    margin: 0 auto;
+    padding: 15px 231.438622rem;
+    background: #fff;
+    @include borderRadius(277.726347rem);
+    box-shadow: 0 27.772635rem 55.545269rem rgb(19, 113, 99, 0.5);
+    .description {
+      text-align: center;
+      font-size: 185.150898rem;
+      font-family: $distro;
+      color: $green;
+      margin-bottom: 222.181078rem;
+    }
+    form {
+      textarea {
+        width: 100%;
+        height: 648.028143rem;
+        font-size: 148.120718rem;
+        @include borderRadius(185.150898rem);
+        border: 1px solid $lime;
+        padding: 46.287724rem;
+      }
+      input,
+      select {
+        width: 100%;
+        height: 277.726347rem;
+        @include borderRadius(185.150898rem);
+        border: 1px solid $lime;
+        margin-bottom: 129.605629rem;
+        font-size: 138.863173rem;
+        padding: 46.287724rem;
+      }
+      .do-btn {
+        padding: 46.287724rem 138.863173rem;
+        display: block;
+        width: fit-content;
+        margin: 138.863173rem auto 0 auto;
+      }
+    }
+  }
+}

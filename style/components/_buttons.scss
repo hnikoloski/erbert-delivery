@@ -1,0 +1,19 @@
+.do-btn {
+  @include borderRadius(333.271616rem);
+  padding: 175.893353rem 259.211257rem;
+  font-weight: $bold;
+  font-size: 148.120718rem;
+  text-transform: uppercase;
+  border: 1px solid;
+  &-brown {
+    background: $brown;
+    border-color: $brown;
+  }
+  &-green {
+    background: $green;
+    border-color: $green;
+  }
+  &:hover {
+    color: inherit;
+  }
+}

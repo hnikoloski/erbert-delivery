@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="29.865" height="18.529" viewBox="0 0 29.865 18.529">
+  <g id="primo-icon" transform="translate(-544.486 -88.301)">
+    <g id="Group_2446" data-name="Group 2446" transform="translate(550.732 89.366)">
+      <path id="Path_7475" data-name="Path 7475" d="M568.826,108.427a8.732,8.732,0,1,1,8.732-8.732A8.742,8.742,0,0,1,568.826,108.427Zm0-15.863a7.131,7.131,0,1,0,7.131,7.131A7.139,7.139,0,0,0,568.826,92.564Z" transform="translate(-560.094 -90.963)" fill="#fff"/>
+    </g>
+    <g id="Group_2449" data-name="Group 2449" transform="translate(544.486 88.301)">
+      <g id="Group_2447" data-name="Group 2447" transform="translate(0)">
+        <path id="Path_7476" data-name="Path 7476" d="M548.234,95.3h-1.072a2.571,2.571,0,0,1-2.677-2.443V89.1a.8.8,0,0,1,1.6,0v3.754a.994.994,0,0,0,1.076.842h1.072a.994.994,0,0,0,1.076-.842V89.1a.8.8,0,1,1,1.6,0v3.754A2.571,2.571,0,0,1,548.234,95.3Z" transform="translate(-544.486 -88.301)" fill="#fff"/>
+      </g>
+      <g id="Group_2448" data-name="Group 2448" transform="translate(2.412)">
+        <path id="Path_7477" data-name="Path 7477" d="M551.314,105.857a.8.8,0,0,1-.8-.8V89.1a.8.8,0,0,1,1.6,0v15.955A.8.8,0,0,1,551.314,105.857Z" transform="translate(-550.514 -88.301)" fill="#fff"/>
+      </g>
+    </g>
+    <g id="Group_2452" data-name="Group 2452" transform="translate(568.222 88.301)">
+      <g id="Group_2450" data-name="Group 2450" transform="translate(2.256 7.547)">
+        <path id="Path_7478" data-name="Path 7478" d="M610.234,117.743a.8.8,0,0,1-.8-.8v-8.984a.8.8,0,0,1,1.6,0v8.984A.8.8,0,0,1,610.234,117.743Z" transform="translate(-609.434 -107.158)" fill="#fff"/>
+      </g>
+      <g id="Group_2451" data-name="Group 2451" transform="translate(0)">
+        <path id="Path_7479" data-name="Path 7479" d="M606.861,97.233c-1.718,0-3.064-1.962-3.064-4.466s1.346-4.466,3.064-4.466,3.064,1.962,3.064,4.466S608.58,97.233,606.861,97.233Zm0-7.331c-.691,0-1.464,1.225-1.464,2.865s.772,2.865,1.464,2.865,1.464-1.225,1.464-2.865S607.552,89.9,606.861,89.9Z" transform="translate(-603.797 -88.301)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

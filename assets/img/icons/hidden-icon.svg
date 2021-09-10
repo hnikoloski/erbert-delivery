@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36.594" height="13.118" viewBox="0 0 36.594 13.118">
+  <g id="hidden-icon" transform="translate(0 0)">
+    <g id="Rectangle_399" data-name="Rectangle 399" transform="translate(0 0)" fill="none" stroke="#503629" stroke-width="1">
+      <rect width="36.594" height="13.119" rx="2" stroke="none"/>
+      <rect x="0.5" y="0.5" width="35.594" height="12.119" rx="1.5" fill="none"/>
+    </g>
+    <g id="Group_3342" data-name="Group 3342" transform="translate(4.398 2.418)">
+      <g id="Group_378" data-name="Group 378" transform="translate(4.488 0) rotate(45)">
+        <g id="Group_377" data-name="Group 377" transform="translate(0 0)">
+          <line id="Line_3" data-name="Line 3" x2="6.347" transform="translate(0 3.173)" fill="none" stroke="#503629" stroke-linecap="round" stroke-width="1"/>
+          <line id="Line_31" data-name="Line 31" x2="6.347" transform="translate(3.173 0) rotate(90)" fill="none" stroke="#503629" stroke-linecap="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Group_3340" data-name="Group 3340" transform="translate(13.753 0) rotate(45)">
+        <g id="Group_377-2" data-name="Group 377" transform="translate(0 0)">
+          <line id="Line_3-2" data-name="Line 3" x2="6.347" transform="translate(0 3.173)" fill="none" stroke="#503629" stroke-linecap="round" stroke-width="1"/>
+          <line id="Line_31-2" data-name="Line 31" x2="6.347" transform="translate(3.173 0) rotate(90)" fill="none" stroke="#503629" stroke-linecap="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Group_3341" data-name="Group 3341" transform="translate(23.018 0) rotate(45)">
+        <g id="Group_377-3" data-name="Group 377" transform="translate(0 0)">
+          <line id="Line_3-3" data-name="Line 3" x2="6.347" transform="translate(0 3.173)" fill="none" stroke="#503629" stroke-linecap="round" stroke-width="1"/>
+          <line id="Line_31-3" data-name="Line 31" x2="6.347" transform="translate(3.173 0) rotate(90)" fill="none" stroke="#503629" stroke-linecap="round" stroke-width="1"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

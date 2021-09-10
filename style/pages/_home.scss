@@ -1,0 +1,136 @@
+.daily-specials {
+  margin-top: 324.014071rem;
+  padding-bottom: 324.014071rem;
+  .section-header {
+    width: 3054.989817rem;
+    padding: 231.438622rem 370.301796rem;
+    background-color: #df4661;
+    background-image: url("../../assets/img/decorations/pink-pattern.png");
+    @include bg-props(cover, center, no-repeat);
+    box-shadow: -83.317904rem 120.348084rem 268.468802rem
+      rgba(223, 70, 97, 0.34);
+    @include borderRadius(629.513053rem);
+    margin: 0 auto 185.150898rem auto;
+    color: #fff;
+    position: relative;
+    top: -324.014071rem;
+    h3 {
+      color: inherit;
+      font-weight: $bold;
+      font-family: $distro;
+      font-size: 268.468802rem;
+      margin-bottom: 37.03018rem;
+      line-height: 1.16;
+      letter-spacing: 0.05em;
+      i {
+        margin-right: 74.060359rem;
+        display: inline-block;
+        width: 324.014071rem;
+        height: 324.014071rem;
+        background: url("../assets/img/icons/special-star.svg");
+        @include bg-props(contain, center, no-repeat);
+      }
+    }
+    p {
+      color: inherit;
+      font-size: 129.605629rem;
+      line-height: 1.21428571;
+    }
+  }
+}
+.info-section {
+  padding: 416.58952rem 0 370.301796rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background: url("../../assets/img/decorations/splash-blue.svg");
+  @include bg-props(120%, 50% 30%, no-repeat);
+
+  .img-wrapper {
+    width: 1927.513423rem;
+    height: 3434.549158rem;
+    img {
+      @include fullSizeImg();
+    }
+  }
+  .content {
+    width: 1296.056286rem;
+    color: #fff;
+    position: relative;
+    top: -231.438622rem;
+    left: -231.438622rem;
+    h3 {
+      color: inherit;
+      font-weight: $bold;
+      font-size: 268.468802rem;
+      font-family: $distro;
+      margin-bottom: 74.060359rem;
+      line-height: 1.07407407;
+    }
+    p {
+      color: inherit;
+      font-size: 120.348084rem;
+      line-height: 1.30769231;
+      b,
+      strong {
+        font-weight: $bold;
+        line-height: inherit;
+      }
+    }
+  }
+  &-secondary {
+    background: url("../../assets/img/decorations/splash-lime.svg");
+    @include bg-props(120%, 50% 30%, no-repeat);
+    position: relative;
+    width: 100%;
+    display: block;
+    .img-wrapper {
+      width: 3010.36845rem;
+      height: 3200.148121rem;
+    }
+    .content {
+      position: absolute;
+      width: 1481.207184rem;
+      top: 1397.88928rem;
+      left: 1850.583225rem;
+    }
+    .do-btn {
+      position: absolute;
+      bottom: 462.877245rem;
+      right: 462.877245rem;
+      box-shadow: 0px 92.575449rem 277.726347rem rgba(0, 134, 117, 0.33);
+      padding: 101.832994rem 268.468802rem;
+      font-size: 111.090539rem;
+    }
+  }
+  &-third {
+    background: url("../../assets/img/decorations/splash-lblue.svg");
+    @include bg-props(120%, 50% 20%, no-repeat);
+    position: relative;
+    .img-wrapper {
+      width: 3205.424921rem;
+      height: 3266.802444rem;
+      img {
+        object-fit: cover;
+        object-position: calc(3205.424921rem / -2);
+      }
+    }
+    .content {
+      color: $brown;
+      position: absolute;
+      top: 1064.617663rem;
+      left: 1832.99389rem;
+    }
+    .do-btn {
+      position: absolute;
+      bottom: 1018.329939rem;
+      right: 462.877245rem;
+      box-shadow: 0px 92.575449rem 277.726347rem rgba(0, 134, 117, 0.33);
+      padding: 101.832994rem 268.468802rem;
+      font-size: 111.090539rem;
+    }
+  }
+}

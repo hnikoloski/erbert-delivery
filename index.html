@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- Slick SLider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Ebert</title>
+    <link
+      rel="shortcut icon"
+      type="image/svg"
+      href="./assets/img/icons/leaf-lime.svg"
+    />
+  </head>
+  <body class="overflow-hidden">
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="centerdiv">
+        <div class="logo-wrapper">
+          <img src="./assets/img/logo.svg" alt="Erbert Loading" />
+        </div>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <!-- / Preloader -->
+    <!-- header -->
+    <header id="masthead">
+      <div class="container-fluid h-100">
+        <div class="row h-100">
+          <div class="col-4">
+            <a href="#!" id="menuTrigger">
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="/" class="logo-wrapper">
+              <img src="./assets/img/logo.svg" alt="Erbert" />
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="#!" id="cartTrigger">
+              <i></i>
+              <span class="counter">4</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="main-menu">
+      <div class="menu-header">
+        <a href="#!" class="close-menu">
+          <span></span>
+          <span></span>
+        </a>
+        <div class="user-toobar">
+          <div class="user-info">
+            <p>Benvenuto</p>
+            <p>Mario Rossi</p>
+          </div>
+          <a href="#!" class="shopping-cart">
+            <i></i>
+            <span class="counter">4</span>
+          </a>
+        </div>
+      </div>
+      <div class="menu-body">
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="has-icon menu-icon">I NOSTRI MENU</a>
+          </li>
+          <li>
+            <a href="#!" class="has-icon plates-icon"
+              >I NOSTRI PIATTI SINGOLI</a
+            >
+          </li>
+          <!-- <li>
+            <a href="#!" class="has-icon offer-icon">LE NOSTRE OFFERTE </a>
+          </li> -->
+          <li>
+            <a href="#!">IL MANIFESTO</a>
+          </li>
+          <li>
+            <a href="#!">COME FUNZIONA</a>
+          </li>
+          <li>
+            <a href="#!">SCOPRI ERBERT</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-footer">
+        <div class="logo-wrapper">
+          <img src="./assets/img/logo.svg" alt="Erbert al Volo" />
+        </div>
+        <ul class="socials">
+          <li>
+            <a href="#!" target="_blank" rel="noopener noreferrer">
+              <i class="fb-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" target="_blank" rel="noopener noreferrer">
+              <i class="instagram-icon"> </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /header -->
+    <!-- Hero -->
+    <div class="hero hero-home">
+      <h2 class="animated fadeInUp">
+        La pausa pranzo di <span>erbert</span> creata per te da Chef e
+        Nutrizionisti: <span>salutare</span>, <span>comoda</span> e
+        <span>buonissima</span>.
+      </h2>
+      <div class="content overflow-hidden">
+        <div class="img-wrapper">
+          <img
+            src="./assets/img/decorations/delivery-biker.svg"
+            alt="Delivery Bike"
+            class="animated fadeInLeft"
+            data-delay="100"
+          />
+        </div>
+        <div class="text-wrapper">
+          <h3>Ordina entro le 11.30</h3>
+          <p>Ricevi il tuo pranzo intelligente tra le 12:30 e le 13.</p>
+        </div>
+        <div class="img-wrapper">
+          <img
+            src="./assets/img/decorations/clock-ilu.svg"
+            alt="Fast Delivery"
+            class="animated fadeInRight"
+            data-delay="200"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- /Hero -->
+    <!-- Taber -->
+    <div class="cta-tabs-wrapper">
+      <ul class="nav nav-tabs" id="cta-tabs">
+        <li class="active">
+          <a
+            data-bs-toggle="tab"
+            data-bs-target=".cta-tab-0"
+            href=".cta-tab-0"
+            class="active menu-tab"
+            data-theme-color="green-theme"
+          >
+            <div class="icon-wrapper"></div>
+            <span>Menu</span>
+          </a>
+        </li>
+        <li class="">
+          <a
+            data-bs-toggle="tab"
+            data-bs-target=".cta-tab-1"
+            href=".cta-tab-1"
+            class="single-dish-tab"
+            data-theme-color="lblue-theme"
+          >
+            <div class="icon-wrapper"></div>
+            <span>piatti singoli</span>
+          </a>
+        </li>
+        <!-- <li class="">
+          <a
+            data-bs-toggle="tab"
+            data-bs-target=".cta-tab-2"
+            href=".cta-tab-2"
+            class="offers-tab"
+            data-theme-color="lorange-theme"
+          >
+            <div class="icon-wrapper"></div>
+            <span>Offerte</span>
+          </a>
+        </li> -->
+      </ul>
+      <div class="tab-content green-theme">
+        <div class="cta-tab-0 tab-pane fade in active show">
+          <div class="tab-header">
+            <div class="text-content">
+              <h4 class="sub-title">I NOSTRI</h4>
+              <h3 class="title has-icon">menu</h3>
+              <p>Un pasto gustoso e nutriente completo di tutto.</p>
+            </div>
+            <div class="filter-wrap">
+              <p class="text-center">FILTRA</p>
+              <a href="#!"><i></i></a>
+            </div>
+            <div class="filter-dropdown">
+              <form action="#!">
+                <div class="form-group">
+                  <input type="checkbox" id="vegetariano" />
+                  <label for="vegetariano">vegetariano</label>
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" id="Carne" />
+                  <label for="Carne">Carne</label>
+                </div>
+                <div class="form-group">
+                  <input type="checkbox" id="Pesce" />
+                  <label for="Pesce">Pesce</label>
+                </div>
+              </form>
+              <a
+                href="#!"
+                class="
+                  do-btn do-btn-brown
+                  text-white text-uppercase
+                  w-fit-content
+                "
+                >mostra i risultati</a
+              >
+            </div>
+          </div>
+          <div class="tab-body">
+            <div class="menu-card-slider">
+              <div class="single-side">
+                <div class="menu-card">
+                  <div class="item-specs">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/primo-icon.svg"
+                            alt="Primo"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Primo</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/snack-icon.svg"
+                            alt="Snack"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Snack</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/frutta-icon.svg"
+                            alt="Frutta"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Frutta</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/bevenada-icon.svg"
+                            alt="Bevenada"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Bevenada</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="featured-img">
+                      <img src="./assets/img/dish-img.png" alt="Orecchiette" />
+                    </div>
+                  </div>
+                  <div class="item-description">
+                    <h2>menu</h2>
+                    <h3>Orecchiette</h3>
+                    <p>Primo + contorno e/o snack + frutta + bevanda</p>
+                  </div>
+                  <div class="item-price-wrap">
+                    <h3 class="price">€ 12,90</h3>
+                    <span class="kcal d-block">640 kcal</span>
+                  </div>
+                  <div class="badge-wrap">
+                    <div class="img-wrapper">
+                      <img
+                        src="./assets/img/icons/magnia-badge.png"
+                        alt="Magnia Bene!"
+                      />
+                    </div>
+                  </div>
+                  <a href="#!" class="add-to-cart">
+                    <i></i>
+                  </a>
+                </div>
+              </div>
+              <div class="single-side">
+                <div class="menu-card">
+                  <div class="item-specs">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/primo-icon.svg"
+                            alt="Primo"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Primo</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/snack-icon.svg"
+                            alt="Snack"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Snack</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/frutta-icon.svg"
+                            alt="Frutta"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Frutta</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/bevenada-icon.svg"
+                            alt="Bevenada"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Bevenada</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="featured-img">
+                      <img src="./assets/img/dish-img.png" alt="Orecchiette" />
+                    </div>
+                  </div>
+                  <div class="item-description">
+                    <h2>menu</h2>
+                    <h3>Orecchiette</h3>
+                    <p>Primo + contorno e/o snack + frutta + bevanda</p>
+                  </div>
+                  <div class="item-price-wrap">
+                    <h3 class="price">€ 12,90</h3>
+                    <span class="kcal d-block">640 kcal</span>
+                  </div>
+                  <div class="badge-wrap">
+                    <div class="img-wrapper">
+                      <img
+                        src="./assets/img/icons/magnia-badge.png"
+                        alt="Magnia Bene!"
+                      />
+                    </div>
+                  </div>
+                  <a href="#!" class="add-to-cart">
+                    <i></i>
+                  </a>
+                </div>
+              </div>
+              <div class="single-side">
+                <div class="menu-card">
+                  <div class="item-specs">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/primo-icon.svg"
+                            alt="Primo"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Primo</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/snack-icon.svg"
+                            alt="Snack"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Snack</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/frutta-icon.svg"
+                            alt="Frutta"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Frutta</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/bevenada-icon.svg"
+                            alt="Bevenada"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Bevenada</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="featured-img">
+                      <img src="./assets/img/dish-img.png" alt="Orecchiette" />
+                    </div>
+                  </div>
+                  <div class="item-description">
+                    <h2>menu</h2>
+                    <h3>Orecchiette</h3>
+                    <p>Primo + contorno e/o snack + frutta + bevanda</p>
+                  </div>
+                  <div class="item-price-wrap">
+                    <h3 class="price">€ 12,90</h3>
+                    <span class="kcal d-block">640 kcal</span>
+                  </div>
+                  <div class="badge-wrap">
+                    <div class="img-wrapper">
+                      <img
+                        src="./assets/img/icons/magnia-badge.png"
+                        alt="Magnia Bene!"
+                      />
+                    </div>
+                  </div>
+                  <a href="#!" class="add-to-cart">
+                    <i></i>
+                  </a>
+                </div>
+              </div>
+              <div class="single-side">
+                <div class="menu-card">
+                  <div class="item-specs">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/primo-icon.svg"
+                            alt="Primo"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Primo</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/snack-icon.svg"
+                            alt="Snack"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Snack</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/frutta-icon.svg"
+                            alt="Frutta"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Frutta</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/bevenada-icon.svg"
+                            alt="Bevenada"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Bevenada</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="featured-img">
+                      <img src="./assets/img/dish-img.png" alt="Orecchiette" />
+                    </div>
+                  </div>
+                  <div class="item-description">
+                    <h2>menu</h2>
+                    <h3>Orecchiette</h3>
+                    <p>Primo + contorno e/o snack + frutta + bevanda</p>
+                  </div>
+                  <div class="item-price-wrap">
+                    <h3 class="price">€ 12,90</h3>
+                    <span class="kcal d-block">640 kcal</span>
+                  </div>
+                  <div class="badge-wrap">
+                    <div class="img-wrapper">
+                      <img
+                        src="./assets/img/icons/magnia-badge.png"
+                        alt="Magnia Bene!"
+                      />
+                    </div>
+                  </div>
+                  <a href="#!" class="add-to-cart">
+                    <i></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a
+              href="#!"
+              class="
+                do-btn do-btn-brown
+                text-lime
+                d-block
+                w-fit-content
+                mx-auto
+              "
+              >Scopri tutti i menu</a
+            >
+          </div>
+        </div>
+        <div class="cta-tab-1 tab-pane fade">
+          <div class="tab-header">
+            <div class="text-content">
+              <h4 class="sub-title">I NOSTRI</h4>
+              <h3 class="title has-icon">menu</h3>
+              <p>Un pasto gustoso e nutriente completo di tutto.</p>
+            </div>
+            <div class="filter-wrap">
+              <p class="text-center">FILTRA</p>
+              <a href="#!"><i></i></a>
+            </div>
+          </div>
+          <div class="tab-body">
+            <div class="menu-card-slider">
+              <div class="single-side">
+                <div class="menu-card">
+                  <div class="item-specs">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/primo-icon.svg"
+                            alt="Primo"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Primo</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/snack-icon.svg"
+                            alt="Snack"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Snack</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/frutta-icon.svg"
+                            alt="Frutta"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Frutta</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/bevenada-icon.svg"
+                            alt="Bevenada"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Bevenada</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="featured-img">
+                      <img src="./assets/img/dish-img.png" alt="Orecchiette" />
+                    </div>
+                  </div>
+                  <div class="item-description">
+                    <h2>menu</h2>
+                    <h3>Orecchiette</h3>
+                    <p>Primo + contorno e/o snack + frutta + bevanda</p>
+                  </div>
+                  <div class="item-price-wrap">
+                    <h3 class="price">€ 12,90</h3>
+                    <span class="kcal d-block">640 kcal</span>
+                  </div>
+                  <div class="badge-wrap">
+                    <div class="img-wrapper">
+                      <img
+                        src="./assets/img/icons/magnia-badge.png"
+                        alt="Magnia Bene!"
+                      />
+                    </div>
+                  </div>
+                  <a href="#!" class="add-to-cart">
+                    <i></i>
+                  </a>
+                </div>
+              </div>
+              <div class="single-side">
+                <div class="menu-card">
+                  <div class="item-specs">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/primo-icon.svg"
+                            alt="Primo"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Primo</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/snack-icon.svg"
+                            alt="Snack"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Snack</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/frutta-icon.svg"
+                            alt="Frutta"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Frutta</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/bevenada-icon.svg"
+                            alt="Bevenada"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Bevenada</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="featured-img">
+                      <img src="./assets/img/dish-img.png" alt="Orecchiette" />
+                    </div>
+                  </div>
+                  <div class="item-description">
+                    <h2>menu</h2>
+                    <h3>Orecchiette</h3>
+                    <p>Primo + contorno e/o snack + frutta + bevanda</p>
+                  </div>
+                  <div class="item-price-wrap">
+                    <h3 class="price">€ 12,90</h3>
+                    <span class="kcal d-block">640 kcal</span>
+                  </div>
+                  <div class="badge-wrap">
+                    <div class="img-wrapper">
+                      <img
+                        src="./assets/img/icons/magnia-badge.png"
+                        alt="Magnia Bene!"
+                      />
+                    </div>
+                  </div>
+                  <a href="#!" class="add-to-cart">
+                    <i></i>
+                  </a>
+                </div>
+              </div>
+              <div class="single-side">
+                <div class="menu-card">
+                  <div class="item-specs">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/primo-icon.svg"
+                            alt="Primo"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Primo</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/snack-icon.svg"
+                            alt="Snack"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Snack</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/frutta-icon.svg"
+                            alt="Frutta"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Frutta</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/bevenada-icon.svg"
+                            alt="Bevenada"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Bevenada</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="featured-img">
+                      <img src="./assets/img/dish-img.png" alt="Orecchiette" />
+                    </div>
+                  </div>
+                  <div class="item-description">
+                    <h2>menu</h2>
+                    <h3>Orecchiette</h3>
+                    <p>Primo + contorno e/o snack + frutta + bevanda</p>
+                  </div>
+                  <div class="item-price-wrap">
+                    <h3 class="price">€ 12,90</h3>
+                    <span class="kcal d-block">640 kcal</span>
+                  </div>
+                  <div class="badge-wrap">
+                    <div class="img-wrapper">
+                      <img
+                        src="./assets/img/icons/magnia-badge.png"
+                        alt="Magnia Bene!"
+                      />
+                    </div>
+                  </div>
+                  <a href="#!" class="add-to-cart">
+                    <i></i>
+                  </a>
+                </div>
+              </div>
+              <div class="single-side">
+                <div class="menu-card">
+                  <div class="item-specs">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/primo-icon.svg"
+                            alt="Primo"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Primo</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/snack-icon.svg"
+                            alt="Snack"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Snack</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/frutta-icon.svg"
+                            alt="Frutta"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Frutta</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/bevenada-icon.svg"
+                            alt="Bevenada"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Bevenada</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="featured-img">
+                      <img src="./assets/img/dish-img.png" alt="Orecchiette" />
+                    </div>
+                  </div>
+                  <div class="item-description">
+                    <h2>menu</h2>
+                    <h3>Orecchiette</h3>
+                    <p>Primo + contorno e/o snack + frutta + bevanda</p>
+                  </div>
+                  <div class="item-price-wrap">
+                    <h3 class="price">€ 12,90</h3>
+                    <span class="kcal d-block">640 kcal</span>
+                  </div>
+                  <div class="badge-wrap">
+                    <div class="img-wrapper">
+                      <img
+                        src="./assets/img/icons/magnia-badge.png"
+                        alt="Magnia Bene!"
+                      />
+                    </div>
+                  </div>
+                  <a href="#!" class="add-to-cart">
+                    <i></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a
+              href="#!"
+              class="
+                do-btn do-btn-brown
+                text-lblue
+                d-block
+                w-fit-content
+                mx-auto
+              "
+              >Scopri tutti i piatti</a
+            >
+          </div>
+        </div>
+        <!-- <div class="cta-tab-2 tab-pane fade">
+          <div class="tab-header">
+            <div class="text-content">
+              <h4 class="sub-title">I NOSTRI</h4>
+              <h3 class="title has-icon">menu</h3>
+              <p>Un pasto gustoso e nutriente completo di tutto.</p>
+            </div>
+            <div class="filter-wrap">
+              <p class="text-center">FILTRA</p>
+              <a href="#!"><i></i></a>
+            </div>
+          </div>
+          <div class="tab-body">
+            <div class="menu-card-slider">
+              <div class="single-side">
+                <div class="menu-card">
+                  <div class="item-specs">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/primo-icon.svg"
+                            alt="Primo"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Primo</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/snack-icon.svg"
+                            alt="Snack"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Snack</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/frutta-icon.svg"
+                            alt="Frutta"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Frutta</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/bevenada-icon.svg"
+                            alt="Bevenada"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Bevenada</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="featured-img">
+                      <img src="./assets/img/dish-img.png" alt="Orecchiette" />
+                    </div>
+                  </div>
+                  <div class="item-description">
+                    <h2>menu</h2>
+                    <h3>Orecchiette</h3>
+                    <p>Primo + contorno e/o snack + frutta + bevanda</p>
+                  </div>
+                  <div class="item-price-wrap">
+                    <h3 class="price">€ 12,90</h3>
+                    <span class="kcal d-block">640 kcal</span>
+                  </div>
+                  <div class="badge-wrap">
+                    <div class="img-wrapper">
+                      <img
+                        src="./assets/img/icons/magnia-badge.png"
+                        alt="Magnia Bene!"
+                      />
+                    </div>
+                  </div>
+                  <a href="#!" class="add-to-cart">
+                    <i></i>
+                  </a>
+                </div>
+              </div>
+              <div class="single-side">
+                <div class="menu-card">
+                  <div class="item-specs">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/primo-icon.svg"
+                            alt="Primo"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Primo</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/snack-icon.svg"
+                            alt="Snack"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Snack</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/frutta-icon.svg"
+                            alt="Frutta"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Frutta</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/bevenada-icon.svg"
+                            alt="Bevenada"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Bevenada</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="featured-img">
+                      <img src="./assets/img/dish-img.png" alt="Orecchiette" />
+                    </div>
+                  </div>
+                  <div class="item-description">
+                    <h2>menu</h2>
+                    <h3>Orecchiette</h3>
+                    <p>Primo + contorno e/o snack + frutta + bevanda</p>
+                  </div>
+                  <div class="item-price-wrap">
+                    <h3 class="price">€ 12,90</h3>
+                    <span class="kcal d-block">640 kcal</span>
+                  </div>
+                  <div class="badge-wrap">
+                    <div class="img-wrapper">
+                      <img
+                        src="./assets/img/icons/magnia-badge.png"
+                        alt="Magnia Bene!"
+                      />
+                    </div>
+                  </div>
+                  <a href="#!" class="add-to-cart">
+                    <i></i>
+                  </a>
+                </div>
+              </div>
+              <div class="single-side">
+                <div class="menu-card">
+                  <div class="item-specs">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/primo-icon.svg"
+                            alt="Primo"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Primo</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/snack-icon.svg"
+                            alt="Snack"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Snack</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/frutta-icon.svg"
+                            alt="Frutta"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Frutta</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/bevenada-icon.svg"
+                            alt="Bevenada"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Bevenada</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="featured-img">
+                      <img src="./assets/img/dish-img.png" alt="Orecchiette" />
+                    </div>
+                  </div>
+                  <div class="item-description">
+                    <h2>menu</h2>
+                    <h3>Orecchiette</h3>
+                    <p>Primo + contorno e/o snack + frutta + bevanda</p>
+                  </div>
+                  <div class="item-price-wrap">
+                    <h3 class="price">€ 12,90</h3>
+                    <span class="kcal d-block">640 kcal</span>
+                  </div>
+                  <div class="badge-wrap">
+                    <div class="img-wrapper">
+                      <img
+                        src="./assets/img/icons/magnia-badge.png"
+                        alt="Magnia Bene!"
+                      />
+                    </div>
+                  </div>
+                  <a href="#!" class="add-to-cart">
+                    <i></i>
+                  </a>
+                </div>
+              </div>
+              <div class="single-side">
+                <div class="menu-card">
+                  <div class="item-specs">
+                    <ul class="list-unstyled">
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/primo-icon.svg"
+                            alt="Primo"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Primo</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/snack-icon.svg"
+                            alt="Snack"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Snack</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/frutta-icon.svg"
+                            alt="Frutta"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Frutta</span>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="icon-wrap">
+                          <img
+                            src="./assets/img/icons/bevenada-icon.svg"
+                            alt="Bevenada"
+                          />
+                        </div>
+                        <div class="text-wrap">
+                          <span>Bevenada</span>
+                        </div>
+                      </li>
+                    </ul>
+                    <div class="featured-img">
+                      <img src="./assets/img/dish-img.png" alt="Orecchiette" />
+                    </div>
+                  </div>
+                  <div class="item-description">
+                    <h2>menu</h2>
+                    <h3>Orecchiette</h3>
+                    <p>Primo + contorno e/o snack + frutta + bevanda</p>
+                  </div>
+                  <div class="item-price-wrap">
+                    <h3 class="price">€ 12,90</h3>
+                    <span class="kcal d-block">640 kcal</span>
+                  </div>
+                  <div class="badge-wrap">
+                    <div class="img-wrapper">
+                      <img
+                        src="./assets/img/icons/magnia-badge.png"
+                        alt="Magnia Bene!"
+                      />
+                    </div>
+                  </div>
+                  <a href="#!" class="add-to-cart">
+                    <i></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a
+              href="#!"
+              class="
+                do-btn do-btn-brown
+                text-lorange
+                d-block
+                w-fit-content
+                mx-auto
+              "
+              >Scopri tutte le offerte</a
+            >
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!-- /Taber -->
+    <!-- Daily Specials -->
+    <div class="daily-specials bg-lpink">
+      <div class="section-header animated fadeInUp">
+        <h3><i></i> Daily Special</h3>
+        <p>Certe offerte non capitano tutti i giorni. Scopri quella di oggi.</p>
+      </div>
+      <div
+        class="menu-card menu-card-single-dish animated fadeInUp"
+        data-delay="300"
+      >
+        <div class="item-specs">
+          <div class="badge-wrap">
+            <div class="img-wrapper">
+              <img
+                src="./assets/img/icons/magnia-badge.png"
+                alt="Magnia Bene!"
+              />
+            </div>
+          </div>
+          <div class="featured-img">
+            <img src="./assets/img/dish-img.png" alt="Orecchiette" />
+          </div>
+        </div>
+        <div class="item-description">
+          <h3 class="text-uppercase">Polpo e quinoa con verdure</h3>
+          <p>Appetitosa insalata di mare e contorno di verdure</p>
+        </div>
+        <div class="item-price-wrap">
+          <h4 class="promo-price">€ 12,90</h4>
+          <h3 class="price">€ 12,90</h3>
+          <span class="kcal d-block">640 kcal</span>
+        </div>
+
+        <a href="#!" class="add-to-cart add-to-cart-white">
+          <i></i>
+        </a>
+      </div>
+    </div>
+    <!-- /Daily Specials -->
+    <!-- Info Section -->
+    <div class="info-section animated fadeInUp add-active">
+      <div class="img-wrapper animated fadeInLeft" data-delay="200">
+        <img
+          src="./assets/img/decorations/chef-illustraion.svg"
+          alt="Non è cucinata di fretta"
+        />
+      </div>
+      <div class="content animated fadeInRight" data-delay="200">
+        <h3>
+          Non è cucinata <br />
+          di fretta,
+        </h3>
+        <p>
+          preparata con impegno e dedizione dai <b>nostri chef</b> che
+          utilizzano solo <b>farine non raffinate, lievito madre</b> e
+          <b>olio EVO</b>.
+        </p>
+      </div>
+    </div>
+    <!-- /Info Section -->
+    <!-- Secondary Tabs -->
+
+    <!-- /Secondary Tabs -->
+    <!-- Seconday Info Section -->
+    <div
+      class="info-section info-section-secondary animated fadeInUp add-active"
+    >
+      <div class="img-wrapper animated fadeInLeft" data-delay="200">
+        <img
+          src="./assets/img/decorations/shopper-illustraion.svg"
+          alt="Non ti fa abbioccare"
+        />
+      </div>
+      <div class="content animated fadeInRight" data-delay="200">
+        <h3>Non ti fa <br />abbioccare,</h3>
+        <p>
+          grazie alle nostre <b>tecniche di cottura</b> rendiamo leggera ogni
+          ricetta, anche la più  tradizionale.
+        </p>
+      </div>
+      <a href="#!" class="do-btn do-btn-green text-white">Scopri di più</a>
+    </div>
+    <!-- /Seconday Info Section -->
+    <!-- Third Info Section -->
+    <div class="info-section info-section-third animated fadeInUp add-active">
+      <div class="img-wrapper animated fadeInLeft" data-delay="200">
+        <img
+          src="./assets/img/decorations/stacker-illustration.svg"
+          alt="Non è mai la stessa"
+        />
+      </div>
+      <div class="content animated fadeInRight" data-delay="200">
+        <h3>
+          Non è mai<br />
+          la stessa,
+        </h3>
+        <p>
+          Perché i nostri menù ti permettono di <b>variare la tua dieta</b> in
+          maniera salutare ed equilibrata.
+        </p>
+      </div>
+      <a href="#!" class="do-btn do-btn-green text-white">Scopri di più</a>
+    </div>
+    <!-- /Third Info Section -->
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="logo-wrapper">
+        <img src="./assets/img/logo.svg" alt="Erbert" />
+      </div>
+      <ul class="socials list-inline w-fit-content mx-auto">
+        <li class="list-inline-item">
+          <a href="#!" target="_blank" rel="noopener noreferrer">
+            <i class="fb-icon"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#!" target="_blank" rel="noopener noreferrer">
+            <i class="instagram-icon"> </i>
+          </a>
+        </li>
+      </ul>
+      <p class="copy mx-auto">
+        © Copyright © 2021 EatRight s.r.l <br />
+        Corso Indipendenza 5, Milano <br />
+        Capitale sociale: € 84.240 <br />
+        Partita IVA: 10343500962
+      </p>
+      <p class="extra-links">
+        <a href="#!">Privacy Policy</a> e <a href="#!">Cookie Policy</a>
+      </p>
+    </footer>
+    <!-- /Footer -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="splashModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="splashModalTitle"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="logo-wrapper">
+            <img src="./assets/img/logo.svg" alt="Erbert" />
+          </div>
+          <p class="description">
+            Inserisci il tuo CAP e scopri se consegniamo già nella tua zona.
+          </p>
+          <form action="#">
+            <div class="formated-inputs">
+              <input type="number" maxlength="1" name="capNum" />
+              <input type="number" maxlength="1" name="capNum" />
+              <input type="number" maxlength="1" name="capNum" />
+              <input type="number" maxlength="1" name="capNum" />
+              <input type="number" maxlength="1" name="capNum" />
+            </div>
+          </form>
+          <input
+            type="submit"
+            value="VERIFICA"
+            class="do-btn do-btn-green text-white submitForm"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- /Modal -->
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Waypoints js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <!-- Slick js -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
+    <!-- Main js -->
+    <script src="./scripts/animations.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

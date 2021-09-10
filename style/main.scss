@@ -1,0 +1,33 @@
+// Setup
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+html {
+  font-size: 0.0277vw !important;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+@media (min-width: 476px) {
+  html {
+    font-size: 0.0077vw !important;
+  }
+}
+@import "./fonts/fonts.scss";
+@import "./helpers/style-setup";
+@import "./helpers/resets.scss";
+@import "./helpers/helpers.scss";
+@import "./helpers/variables.scss";
+@import "./helpers/typography.scss";
+@import "./helpers/animations";
+@import "./helpers/icons";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./components/buttons";
+@import "./components/hero";
+@import "./components/cta-tabs-menu";
+@import "./components/menu-card";
+@import "./components/sliders";
+@import "./components/modals";
+
+@import "./pages/home";
+@import "./pages/account";
