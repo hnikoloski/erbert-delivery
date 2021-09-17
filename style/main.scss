@@ -13,22 +13,7 @@ html {
   }
 }
 @import "./fonts/fonts.scss";
-@import "./helpers/style-setup";
-@import "./helpers/resets.scss";
-@import "./helpers/helpers.scss";
-@import "./helpers/variables.scss";
-@import "./helpers/typography.scss";
-@import "./helpers/animations";
-@import "./helpers/icons";
-@import "./layout/header";
-@import "./layout/footer";
-@import "./components/buttons";
-@import "./components/hero";
-@import "./components/cta-tabs-menu";
-@import "./components/menu-card";
-@import "./components/sliders";
-@import "./components/modals";
-
-@import "./pages/home";
-@import "./pages/account";
-@import "./pages/login";
+@import "./helpers/helpers";
+@import "./components/components";
+@import "./pages/pages";
+@import "./layout/layout";
