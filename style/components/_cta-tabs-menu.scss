@@ -252,7 +252,7 @@
       background: $lime;
       @include borderRadius(296rem);
       position: relative;
-      z-index: initial;
+      z-index: 99;
       &::after {
         content: "";
         position: absolute;
@@ -326,82 +326,83 @@
           }
         }
       }
-      .filter-dropdown {
-        display: none;
-        position: absolute;
-        bottom: -1805.221255rem;
-        @include hor-center();
-        width: 3054.989817rem;
-        background: #fff;
-        box-shadow: 0 27.772635rem 55.545269rem rgba(0, 0, 0, 0.16);
-        padding-left: 481.392335rem;
-        padding-top: 564.710239rem;
-        @include borderRadius(296rem);
-        z-index: -1;
-        form {
-          .form-group {
-            display: block;
-            margin-bottom: 222.181078rem;
-            &:last-of-type {
-              margin-bottom: 444.362155rem;
-            }
-            input {
-              padding: 0;
-              height: initial;
-              width: initial;
-              margin-bottom: 0;
-              display: none;
-              cursor: pointer;
-              &:checked {
-                + {
-                  label {
-                    &:after {
-                      content: "";
-                      display: block;
-                      position: absolute;
-                      top: 18.51509rem;
-                      left: 83.317904rem;
-                      width: 55.545269rem;
-                      height: 129.605629rem;
-                      border: solid $brown;
-                      border-width: 0 18.51509rem 18.51509rem 0;
-                      transform: rotate(45deg);
-                    }
+    }
+    .filter-dropdown {
+      display: none;
+      position: absolute;
+      top: 1155rem;
+      @include hor-center();
+      width: 3054.989817rem;
+      background: #fff;
+      box-shadow: 0 27.772635rem 55.545269rem rgba(0, 0, 0, 0.16);
+      padding-left: 481.392335rem;
+      padding-top: 564.710239rem;
+      @include borderRadius(296rem);
+      z-index: 9;
+      transition: 0s;
+      form {
+        .form-group {
+          display: block;
+          margin-bottom: 222.181078rem;
+          &:last-of-type {
+            margin-bottom: 444.362155rem;
+          }
+          input {
+            padding: 0;
+            height: initial;
+            width: initial;
+            margin-bottom: 0;
+            display: none;
+            cursor: pointer;
+            &:checked {
+              + {
+                label {
+                  &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 18.51509rem;
+                    left: 83.317904rem;
+                    width: 55.545269rem;
+                    height: 129.605629rem;
+                    border: solid $brown;
+                    border-width: 0 18.51509rem 18.51509rem 0;
+                    transform: rotate(45deg);
                   }
                 }
               }
             }
-            label {
-              position: relative;
-              cursor: pointer;
-              font-size: 138.863173rem;
-              color: $brown;
-              font-weight: $bold;
-              text-transform: uppercase;
-              &:before {
-                content: "";
-                -webkit-appearance: none;
-                background-color: transparent;
-                border: 18.51509rem solid $brown;
+          }
+          label {
+            position: relative;
+            cursor: pointer;
+            font-size: 138.863173rem;
+            color: $brown;
+            font-weight: $bold;
+            text-transform: uppercase;
+            &:before {
+              content: "";
+              -webkit-appearance: none;
+              background-color: transparent;
+              border: 18.51509rem solid $brown;
 
-                padding: 92.575449rem;
-                display: inline-block;
-                position: relative;
-                vertical-align: middle;
-                cursor: pointer;
-                margin-right: 231.438622rem;
-                @include borderRadius(46.287724rem);
-              }
+              padding: 92.575449rem;
+              display: inline-block;
+              position: relative;
+              vertical-align: middle;
+              cursor: pointer;
+              margin-right: 231.438622rem;
+              @include borderRadius(46.287724rem);
             }
           }
         }
-        .do-btn {
-          font-size: 138.863173rem;
-          padding: 88.872431rem 194.408443rem;
-          position: absolute;
-          bottom: -20px;
-          @include hor-center();
-        }
+      }
+      .do-btn {
+        font-size: 138.863173rem;
+        padding: 88.872431rem 194.408443rem;
+        position: absolute;
+        bottom: -20px;
+        @include hor-center();
       }
     }
     .tab-body {

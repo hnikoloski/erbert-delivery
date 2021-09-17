@@ -59,9 +59,9 @@ $(document).ready(function () {
   }
   // Dropdown Filter
   if ($(".filter-wrap").length) {
-    $(".filter-wrap a").on("click", function (e) {
+    $(".filter-wrap a, .filter-dropdown .do-btn").on("click", function (e) {
       e.preventDefault();
-      $(".filter-dropdown").toggle();
+      $(".filter-dropdown").slideToggle();
     });
   }
   // Tabs Change theme color
