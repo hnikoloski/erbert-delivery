@@ -430,6 +430,28 @@
 }
 
 .secondary-tabs {
+  .tab-content {
+    padding-top: 324.014071rem;
+    &.green-theme {
+      background: #eff7f7;
+    }
+    &.lblue-theme {
+      background: #fff;
+      .tab-header {
+        .tab-title {
+          &:after {
+            background: $lime;
+          }
+        }
+      }
+    }
+    .do-btn {
+      &:last-of-type {
+        position: relative;
+        bottom: -74.060359rem;
+      }
+    }
+  }
   .tab-header {
     padding: 0 231.438622rem;
     margin-bottom: 1083.132753rem;
@@ -482,6 +504,14 @@
         background: $lblue;
         z-index: -1;
       }
+    }
+  }
+  .menu-card {
+    &:not(:first-of-type) {
+      margin-top: 1157.193112rem;
+    }
+    &:last-of-type {
+      margin-bottom: 555.452694rem;
     }
   }
 }

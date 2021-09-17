@@ -82,33 +82,9 @@
     }
   }
   &-secondary {
-    background: url("../../assets/img/decorations/splash-lime.svg");
-    @include bg-props(120%, 50% 30%, no-repeat);
-    position: relative;
-    width: 100%;
-    display: block;
-    .img-wrapper {
-      width: 3010.36845rem;
-      height: 3200.148121rem;
-    }
-    .content {
-      position: absolute;
-      width: 1481.207184rem;
-      top: 1397.88928rem;
-      left: 1850.583225rem;
-    }
-    .do-btn {
-      position: absolute;
-      bottom: 462.877245rem;
-      right: 462.877245rem;
-      box-shadow: 0px 92.575449rem 277.726347rem rgba(0, 134, 117, 0.33);
-      padding: 101.832994rem 268.468802rem;
-      font-size: 111.090539rem;
-    }
-  }
-  &-third {
+    margin-top: 231.438622rem;
     background: url("../../assets/img/decorations/splash-lblue.svg");
-    @include bg-props(120%, 50% 20%, no-repeat);
+    @include bg-props(150%, 70% 20%, no-repeat);
     position: relative;
     .img-wrapper {
       width: 3205.424921rem;
@@ -127,6 +103,45 @@
     .do-btn {
       position: absolute;
       bottom: 1018.329939rem;
+      right: 462.877245rem;
+      box-shadow: 0px 92.575449rem 277.726347rem rgba(0, 134, 117, 0.33);
+      padding: 101.832994rem 268.468802rem;
+      font-size: 111.090539rem;
+    }
+  }
+  &-third {
+    background: url("../../assets/img/decorations/splash-green.svg");
+    @include bg-props(130%, 20% 10%, no-repeat);
+    position: relative;
+    width: 100%;
+    display: block;
+    .img-wrapper {
+      width: 2457.600444rem;
+      height: 2587.483799rem;
+      margin-left: auto;
+      img {
+        object-fit: cover;
+        object-position: 300rem 0;
+      }
+    }
+    .content {
+      position: absolute;
+      width: 1481.207184rem;
+      top: 1328.88928rem;
+      left: 750.583225rem;
+      p {
+        width: 100%;
+        img {
+          width: 100%;
+          height: 532.864284rem;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+    }
+    .do-btn {
+      position: absolute;
+      bottom: 462.877245rem;
       right: 462.877245rem;
       box-shadow: 0px 92.575449rem 277.726347rem rgba(0, 134, 117, 0.33);
       padding: 101.832994rem 268.468802rem;

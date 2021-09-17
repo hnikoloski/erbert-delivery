@@ -1,5 +1,6 @@
 $(document).ready(function () {
-  $("#menuTrigger, #main-menu .close-menu").on("click", function () {
+  $("#menuTrigger, #main-menu .close-menu").on("click", function (e) {
+    e.preventDefault();
     $("#main-menu").toggleClass("active");
     $("body").toggleClass("overflow-hidden");
   });
@@ -59,9 +60,15 @@ $(document).ready(function () {
   }
   // Dropdown Filter
   if ($(".filter-wrap").length) {
-    $(".filter-wrap a, .filter-dropdown .do-btn").on("click", function (e) {
+    $(".filter-wrap a").on("click", function (e) {
       e.preventDefault();
-      $(".filter-dropdown").slideToggle();
+      $(this).parent().parent().siblings(".filter-dropdown").slideToggle();
+    });
+  }
+  if ($(".filter-dropdown .do-btn").length) {
+    $(".filter-dropdown .do-btn").on("click", function (e) {
+      e.preventDefault();
+      $(this).parent().slideToggle();
     });
   }
   // Tabs Change theme color

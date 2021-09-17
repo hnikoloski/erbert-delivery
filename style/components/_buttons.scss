@@ -16,4 +16,16 @@
   &:hover {
     color: inherit;
   }
+  &.text-lblue {
+    color: $lblue;
+    &:hover {
+      color: $lblue;
+    }
+  }
+  &.text-lime {
+    color: $lime;
+    &:hover {
+      color: $lime;
+    }
+  }
 }
