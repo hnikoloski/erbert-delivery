@@ -2817,7 +2817,16 @@ a:focus {
   max-height: 70vh;
   overflow-y: auto;
 }
+#masthead #mini-cart .cart-body .empty-cart {
+  display: none;
+  text-align: center;
+  font-size: 166.635808rem;
+  padding: 92.575449rem 0;
+  color: #503629;
+  transition: 0s;
+}
 #masthead #mini-cart .cart-body .single-cart-order {
+  transition: 0s;
   padding: 115.719311rem 185.150898rem;
   display: flex;
   flex-wrap: wrap;
@@ -2842,7 +2851,7 @@ a:focus {
   object-position: center;
 }
 #masthead #mini-cart .cart-body .single-cart-order .content {
-  width: calc(100% - 716.533975rem - 157.378263rem);
+  width: calc(100% - 716.533975rem - 157.378263rem - 175.3379rem);
   padding-left: 46.287724rem;
 }
 #masthead #mini-cart .cart-body .single-cart-order .content h3 {
@@ -2857,8 +2866,27 @@ a:focus {
   font-weight: 700;
   font-family: "Distro";
 }
+#masthead #mini-cart .cart-body .single-cart-order .remove-order i {
+  width: 175.3379rem;
+  height: 187.002407rem;
+  display: block;
+  position: relative;
+}
+#masthead #mini-cart .cart-body .single-cart-order .remove-order i:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/img/icons/trash-icon.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 #masthead #mini-cart .cart-footer {
   padding: 222.181078rem 0;
+  transition: 0s;
 }
 #masthead #mini-cart .cart-footer .do-btn {
   width: 1481.207184rem;

@@ -12,6 +12,24 @@ $(document).ready(function () {
       $("#mini-cart").toggleClass("active");
     }
   );
+  $("#mini-cart .remove-order").on("click", function (e) {
+    e.preventDefault();
+    let parentContainer = $(this).parent();
+    $.when(parentContainer.slideUp(750)).done(function () {
+      parentContainer.remove(); //Temporary deletion of order
+      // TODO: Send order for deletion to api.
+      // TODO: Send order for deletion to api.
+      // TODO: Send order for deletion to api.
+      if ($(" #mini-cart .single-order").length == 0) {
+        $("#mini-cart .empty-cart").fadeIn();
+        $("#mini-cart .cart-footer").fadeOut();
+      } else {
+        $("#mini-cart .empty-cart").fadeOut();
+        $("#mini-cart .cart-footer").fadeIn();
+      }
+    });
+  });
+
   // show Modal on load
   if (localStorage.getItem("cookieSeen") != "shown") {
     $("#splashModal").modal("show");
