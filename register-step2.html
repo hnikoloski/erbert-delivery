@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <!-- Slick SLider -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- intl tel input -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/css/intlTelInput.css"
+      integrity="sha512-gxWow8Mo6q6pLa1XH/CcH8JyiSDEtiwJV78E+D+QP0EVasFs8wKXq16G8CLD4CJ2SnonHr4Lm/yY2fSI2+cbmw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Intl tel input js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/js/intlTelInput.min.js"
+      integrity="sha512-QMUqEPmhXq1f3DnAVdXvu40C8nbTgxvBGvNruP6RFacy3zWKbNTmx7rdQVVM2gkd2auCWhlPYtcW2tHwzso4SA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.13/img/flags.png -->
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Ebert</title>
+    <link
+      rel="shortcut icon"
+      type="image/svg"
+      href="./assets/img/icons/leaf-lime.svg"
+    />
+  </head>
+  <body class="overflow-hidden">
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="centerdiv">
+        <div class="logo-wrapper">
+          <img src="./assets/img/logo.svg" alt="Erbert Loading" />
+        </div>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <!-- / Preloader -->
+    <!-- header -->
+    <header id="masthead">
+      <div class="container-fluid h-100">
+        <div class="row align-items-center">
+          <div class="col-4">
+            <a href="#!" id="menuTrigger">
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="/" class="logo-wrapper">
+              <img src="./assets/img/logo.svg" alt="Erbert" />
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="#!" id="cartTrigger">
+              <i></i>
+              <span class="counter">4</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="main-menu">
+      <div class="menu-header">
+        <a href="#!" class="close-menu">
+          <span></span>
+          <span></span>
+        </a>
+        <div class="user-toobar">
+          <div class="user-info">
+            <p>Benvenuto</p>
+            <p>Mario Rossi</p>
+          </div>
+          <a href="#!" class="shopping-cart">
+            <i></i>
+            <span class="counter">4</span>
+          </a>
+        </div>
+      </div>
+      <div class="menu-body">
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!" class="has-icon menu-icon">I NOSTRI MENU</a>
+          </li>
+          <li>
+            <a href="#!" class="has-icon plates-icon"
+              >I NOSTRI PIATTI SINGOLI</a
+            >
+          </li>
+          <!-- <li>
+            <a href="#!" class="has-icon offer-icon">LE NOSTRE OFFERTE </a>
+          </li> -->
+          <li>
+            <a href="#!">IL MANIFESTO</a>
+          </li>
+          <li>
+            <a href="#!">COME FUNZIONA</a>
+          </li>
+          <li>
+            <a href="#!">SCOPRI ERBERT</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-footer">
+        <div class="logo-wrapper">
+          <img src="./assets/img/logo.svg" alt="Erbert al Volo" />
+        </div>
+        <ul class="socials">
+          <li>
+            <a href="#!" target="_blank" rel="noopener noreferrer">
+              <i class="fb-icon"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#!" target="_blank" rel="noopener noreferrer">
+              <i class="instagram-icon"> </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /header -->
+    <!-- Hero -->
+    <div class="register-hero">
+      <h2>Registrazione</h2>
+    </div>
+    <!-- /Hero -->
+    <!-- User Registration step 2 -->
+    <form action="/register-step2.html" id="user-registration-form">
+      <div class="input-grp">
+        <h3 class="grp-title">Codice azienda</h3>
+        <input
+          type="text"
+          name="codiceNum"
+          id="codiceNumInput"
+          placeholder="Es 45941"
+          readonly="true"
+          value="45941"
+          autocomplete="false"
+        />
+      </div>
+      <div class="input-grp">
+        <h3 class="grp-title">Informazioni personali</h3>
+        <label for="firstName"> Nome </label>
+        <input type="text" name="firstName" id="firstName" />
+        <label for="lastName"> Cognome </label>
+        <input type="text" name="lastName" id="lastName" />
+        <label for="phoneNum">Numero di telefono</label>
+        <input type="tel" id="phoneNum" />
+        <label for="userEmail">Indirizzo e-mail</label>
+        <input type="email" name="userEmail" id="userEmail" />
+      </div>
+      <div class="input-grp">
+        <h3 class="grp-title">Credenziali utente</h3>
+        <h5 class="grp-sub-title">Scegli una password</h5>
+        <label for="userPassword">Password</label>
+        <input
+          type="password"
+          name="userPassword"
+          id="userPassword"
+          autocomplete="false"
+        />
+        <label for="userConfirmPassword">Ripeti password</label>
+        <input
+          type="password"
+          name="userConfirmPassword"
+          id="userConfirmPassword"
+          autocomplete="false"
+        />
+      </div>
+      <button
+        value="REGISTRATI"
+        class="do-btn do-btn-orange text-white fw-bold d-block mx-auto"
+      >
+        REGISTRATI
+      </button>
+    </form>
+    <!-- /User Registration step 2 -->
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="logo-wrapper">
+        <img src="./assets/img/logo-white.svg" alt="Erbert" />
+      </div>
+      <ul class="socials list-inline w-fit-content mx-auto">
+        <li class="list-inline-item">
+          <a href="#!" target="_blank" rel="noopener noreferrer">
+            <i class="fb-icon"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#!" target="_blank" rel="noopener noreferrer">
+            <i class="instagram-icon"> </i>
+          </a>
+        </li>
+      </ul>
+      <p class="copy mx-auto">
+        © Copyright © 2021 EatRight s.r.l <br />
+        Corso Indipendenza 5, Milano <br />
+        Capitale sociale: € 84.240 <br />
+        Partita IVA: 10343500962
+      </p>
+      <p class="extra-links">
+        <a href="#!">Privacy Policy</a> e <a href="#!">Cookie Policy</a>
+      </p>
+    </footer>
+    <!-- /Footer -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="addAddressModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="addAddressModalTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <p class="description">Aggiungi un nuovo indirizzo</p>
+          <form action="#">
+            <select name="addressType" id="addressType">
+              <option value="ufficio">Ufficio</option>
+              <option value="casa">Casa</option>
+            </select>
+            <textarea name="userAddress" id="" cols="30" rows="10"></textarea>
+            <input
+              type="submit"
+              value="SALVA"
+              class="do-btn do-btn-green text-white submitForm"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <div
+      class="modal fade"
+      id="addPaymentModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="addPaymentModal"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <p class="description">Aggiungi un nuovo metodo di pagamento</p>
+          <form action="#">
+            <input
+              type="text"
+              name="name-on-card"
+              id="name-on-card"
+              placeholder="Name on card"
+            />
+            <input
+              type="text"
+              name="card-num"
+              id="card-num"
+              placeholder="Card Number"
+            />
+            <div
+              class="
+                d-flex
+                align-content-center
+                flex-wrap
+                align-items-center
+                justify-content-center
+              "
+            >
+              <input
+                type="text"
+                name="exp-date"
+                id="exp-date"
+                placeholder="Exp. Date"
+                class="w-50"
+              />
+              <input
+                type="text"
+                name="cvv"
+                id="cvv"
+                placeholder="Cvv"
+                class="w-50"
+              />
+            </div>
+            <input
+              type="submit"
+              value="SALVA"
+              class="do-btn do-btn-green text-white submitForm"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- /Modal -->
+    <!-- Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Bundle -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Waypoints js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+    <!-- Slick js -->
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <!-- jQuery validate -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/additional-methods.min.js"></script>
+
+    <!-- Main js -->
+    <script src="./scripts/animations.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

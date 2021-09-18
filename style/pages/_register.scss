@@ -1,0 +1,103 @@
+#user-registration-form {
+  width: 2832.808739rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 324.014071rem;
+  .input-grp {
+    &:not(:first-of-type) {
+      margin-top: 314.756527rem;
+    }
+    .grp-title {
+      font-size: 129.605629rem;
+      color: $brown;
+      font-weight: $bold;
+      padding-bottom: 92.575449rem;
+      border-bottom: 1px solid #c1c1c1;
+      margin-bottom: 185.150898rem;
+    }
+    .grp-sub-title {
+      font-size: 111.090539rem;
+      font-style: italic;
+      color: #008675;
+      margin-bottom: 268.468802rem;
+    }
+    label {
+      color: $brown;
+      font-size: 111.090539rem;
+      margin-bottom: 55.545269rem;
+      display: block;
+      &[for="phoneNum"] {
+        margin-top: 129.605629rem;
+      }
+      &.error {
+        color: #df4661;
+        font-style: italic;
+      }
+    }
+    input {
+      &.error {
+        border-color: #df4661;
+      }
+      &:not(:last-of-type) {
+        margin-bottom: 129.605629rem;
+      }
+      font-size: 138.863173rem;
+      font-style: italic;
+      color: $brown;
+      padding: 92.575449rem 36.287724rem 92.575449rem 157.378263rem;
+      width: 100%;
+      border: 1px solid #acacac;
+      @include borderRadius(277.726347rem);
+      &[readonly] {
+        color: rgba(0, 0, 0, 0.45);
+      }
+    }
+    .iti--allow-dropdown {
+      width: 100%;
+      display: flex;
+      margin-bottom: 129.605629rem;
+      .iti__flag-container {
+        position: relative;
+        width: 749.861137rem;
+        height: 416.58952rem;
+        border: 1px solid #acacac;
+        @include borderRadius(277.726347rem);
+        .iti__flag {
+          transition: 0s;
+          @include borderRadius(40%);
+        }
+        .iti__selected-flag {
+          transition: 0s;
+          font-size: 10px;
+          justify-content: center;
+        }
+      }
+      input[type="tel"] {
+        margin-left: auto;
+        width: calc(100% - 749.861137rem - 83.317904rem);
+      }
+    }
+  }
+  button {
+    padding: 0.5em;
+    width: 2610.627662rem;
+    height: 573.967784rem;
+    box-shadow: 0px 92.575449rem 277.726347rem rgba(0, 0, 0, 0.22);
+    margin-top: 416.58952rem;
+  }
+}
+.iti__country-list {
+  font-size: 148.120718rem;
+}
+.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+  background: transparent;
+}
+.iti__arrow {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid $brown;
+  &--up {
+    border-top: none;
+    border-bottom: 5px solid $brown;
+  }
+}

@@ -706,6 +706,10 @@ a:focus {
   background: #f57120;
   border-color: #f57120;
 }
+.do-btn-lime {
+  background: #79b52d;
+  border-color: #79b52d;
+}
 .do-btn:hover {
   color: inherit;
 }
@@ -2393,6 +2397,169 @@ a:focus {
   font-size: 111.090539rem;
   box-shadow: 0px 10px 30px rgba(0, 134, 117, 0.33);
   padding: 0;
+}
+
+#user-registration-form {
+  width: 2832.808739rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 324.014071rem;
+}
+#user-registration-form .input-grp:not(:first-of-type) {
+  margin-top: 314.756527rem;
+}
+#user-registration-form .input-grp .grp-title {
+  font-size: 129.605629rem;
+  color: #503629;
+  font-weight: 700;
+  padding-bottom: 92.575449rem;
+  border-bottom: 1px solid #c1c1c1;
+  margin-bottom: 185.150898rem;
+}
+#user-registration-form .input-grp .grp-sub-title {
+  font-size: 111.090539rem;
+  font-style: italic;
+  color: #008675;
+  margin-bottom: 268.468802rem;
+}
+#user-registration-form .input-grp label {
+  color: #503629;
+  font-size: 111.090539rem;
+  margin-bottom: 55.545269rem;
+  display: block;
+}
+#user-registration-form .input-grp label[for=phoneNum] {
+  margin-top: 129.605629rem;
+}
+#user-registration-form .input-grp label.error {
+  color: #df4661;
+  font-style: italic;
+}
+#user-registration-form .input-grp input {
+  font-size: 138.863173rem;
+  font-style: italic;
+  color: #503629;
+  padding: 92.575449rem 36.287724rem 92.575449rem 157.378263rem;
+  width: 100%;
+  border: 1px solid #acacac;
+  border-radius: 277.726347rem;
+  -moz-border-radius: 277.726347rem;
+  -webkit-border-radius: 277.726347rem;
+}
+#user-registration-form .input-grp input.error {
+  border-color: #df4661;
+}
+#user-registration-form .input-grp input:not(:last-of-type) {
+  margin-bottom: 129.605629rem;
+}
+#user-registration-form .input-grp input[readonly] {
+  color: rgba(0, 0, 0, 0.45);
+}
+#user-registration-form .input-grp .iti--allow-dropdown {
+  width: 100%;
+  display: flex;
+  margin-bottom: 129.605629rem;
+}
+#user-registration-form .input-grp .iti--allow-dropdown .iti__flag-container {
+  position: relative;
+  width: 749.861137rem;
+  height: 416.58952rem;
+  border: 1px solid #acacac;
+  border-radius: 277.726347rem;
+  -moz-border-radius: 277.726347rem;
+  -webkit-border-radius: 277.726347rem;
+}
+#user-registration-form .input-grp .iti--allow-dropdown .iti__flag-container .iti__flag {
+  transition: 0s;
+  border-radius: 40%;
+  -moz-border-radius: 40%;
+  -webkit-border-radius: 40%;
+}
+#user-registration-form .input-grp .iti--allow-dropdown .iti__flag-container .iti__selected-flag {
+  transition: 0s;
+  font-size: 10px;
+  justify-content: center;
+}
+#user-registration-form .input-grp .iti--allow-dropdown input[type=tel] {
+  margin-left: auto;
+  width: calc(100% - 749.861137rem - 83.317904rem);
+}
+#user-registration-form button {
+  padding: 0.5em;
+  width: 2610.627662rem;
+  height: 573.967784rem;
+  box-shadow: 0px 92.575449rem 277.726347rem rgba(0, 0, 0, 0.22);
+  margin-top: 416.58952rem;
+}
+
+.iti__country-list {
+  font-size: 148.120718rem;
+}
+
+.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+  background: transparent;
+}
+
+.iti__arrow {
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid #503629;
+}
+.iti__arrow--up {
+  border-top: none;
+  border-bottom: 5px solid #503629;
+}
+
+.thank-you-section {
+  padding-bottom: 777.633772rem;
+}
+.thank-you-section .content {
+  text-align: center;
+  padding-bottom: 231.438622rem;
+  border-bottom: 1px solid #c1c1c1;
+  max-width: 2795.77856rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.thank-you-section .content p {
+  font-size: 120.348084rem;
+  color: #503629;
+  margin-bottom: 92.575449rem;
+  line-height: 1.46153846;
+  max-width: 2129.235327rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.thank-you-section .content h3 {
+  color: #f57120;
+  font-weight: 700;
+  font-size: 194.408443rem;
+  font-family: "Distro";
+  margin-bottom: 231.438622rem;
+}
+.thank-you-section .content .img-wrapper {
+  width: 1666.358082rem;
+  height: 1110.905388rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.thank-you-section .content .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.thank-you-section .do-btn {
+  margin-top: 231.438622rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1666.358082rem;
+  height: 361.044251rem;
+  box-shadow: 0px 92.575449rem 277.726347rem rgba(0, 134, 117, 0.33);
+  padding: 0;
+  text-align: center;
+  line-height: 361.044251rem;
 }
 
 #preloader {

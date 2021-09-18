@@ -217,4 +217,52 @@ $(document).ready(function () {
       }
     });
   }
+  // jQuery Validation
+  $("#user-registration-form").validate({
+    rules: {
+      firstName: {
+        required: true,
+        minlength: 2,
+      },
+      lastName: {
+        required: true,
+        minlength: 2,
+      },
+      userEmail: {
+        required: true,
+        email: true,
+      },
+      userPassword: {
+        required: true,
+        minlength: 5,
+      },
+      userConfirmPassword: {
+        required: true,
+        minlength: 5,
+        equalTo: "#userPassword",
+      },
+    },
+    messages: {
+      firstName: {
+        required: "Please insert your first name",
+        minlength: "Name must be at least 2 characters",
+      },
+      lastName: {
+        required: "Please insert your last name",
+        minlength: "Last must be at least 2 characters",
+      },
+      userPassword: {
+        required: "Please enter a password.",
+        minlength: "Your password must be atleast 5 characters.",
+      },
+      userConfirmPassword: {
+        required: "Please enter a password confirmation.",
+        minlength: "Your password must be atleast 5 characters.",
+        equalTo: "Please enter the same password as above.",
+      },
+    },
+  });
+  // Phone extension flags
+  let countryCodePhone = document.querySelector("#phoneNum");
+  window.intlTelInput(countryCodePhone);
 });

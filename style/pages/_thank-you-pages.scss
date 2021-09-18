@@ -1,0 +1,49 @@
+.thank-you-section {
+  padding-bottom: 777.633772rem;
+
+  .content {
+    text-align: center;
+    padding-bottom: 231.438622rem;
+    border-bottom: 1px solid #c1c1c1;
+    max-width: 2795.77856rem;
+    margin-left: auto;
+    margin-right: auto;
+    p {
+      font-size: 120.348084rem;
+      color: $brown;
+      margin-bottom: 92.575449rem;
+      line-height: 1.46153846;
+      max-width: 2129.235327rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h3 {
+      color: $orange;
+      font-weight: $bold;
+      font-size: 194.408443rem;
+      font-family: $distro;
+      margin-bottom: 231.438622rem;
+    }
+    .img-wrapper {
+      width: 1666.358082rem;
+      height: 1110.905388rem;
+      margin-left: auto;
+      margin-right: auto;
+      img {
+        @include fullSizeImg();
+      }
+    }
+  }
+  .do-btn {
+    margin-top: 231.438622rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1666.358082rem;
+    height: 361.044251rem;
+    box-shadow: 0px 92.575449rem 277.726347rem rgba(0, 134, 117, 0.33);
+    padding: 0;
+    text-align: center;
+    line-height: 361.044251rem;
+  }
+}
