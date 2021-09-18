@@ -84,7 +84,7 @@
   }
 }
 #masthead {
-  height: 861rem;
+  height: 833.179041rem;
   padding: 102rem 128rem 102rem 202rem;
   margin-bottom: 58rem;
   #menuTrigger {
@@ -92,7 +92,7 @@
     width: 250rem;
     height: 93rem;
     position: relative;
-    top: 160rem;
+    // top: 160rem;
     span {
       display: block;
       width: 100%;
@@ -113,8 +113,8 @@
     }
   }
   .logo-wrapper {
-    width: 676rem;
-    height: 657rem;
+    width: 722.088502rem;
+    height: 240.696167rem;
     display: block;
     margin: 0 auto;
     img {
@@ -127,7 +127,7 @@
     display: block;
     margin: 0 0 0 auto;
     position: relative;
-    top: 160rem;
+    // top: 160rem;
     i {
       background: url("../../assets/img/icons/cart-icon.svg");
       @include bg-props(contain, center, no-repeat);

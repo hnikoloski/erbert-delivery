@@ -1,8 +1,28 @@
+.register-hero {
+  margin: 324.014071rem;
+  margin-bottom: 370.301796rem;
+  h2 {
+    color: $green;
+    font-size: 194.408443rem;
+    font-weight: $bold;
+    font-family: $distro;
+    text-align: center;
+    max-width: 2055.174968rem;
+    margin: 0 auto;
+  }
+}
+
 .login-tabs {
+  max-width: 2962.414368rem;
+  margin-left: auto;
+  margin-right: auto;
   .nav-tabs {
+    display: flex;
+    justify-content: space-around;
     li {
       a {
         span {
+          font-size: 166.635808rem;
           &:after {
             width: 0;
             background: $orange;
@@ -17,6 +37,113 @@
           }
         }
       }
+    }
+  }
+  .register-tab {
+    form {
+      width: 2832.808739rem;
+      margin-left: auto;
+      margin-right: auto;
+      img {
+        width: 338.733568rem;
+        height: 121.458989rem;
+        object-fit: contain;
+        object-position: center;
+        margin: 0 auto 92.575449rem auto;
+        display: block;
+      }
+      .form-title {
+        font-size: 166.635808rem;
+        margin-bottom: 101.832994rem;
+      }
+      input {
+        font-size: 138.863173rem;
+        font-style: italic;
+        color: $brown;
+        padding: 92.575449rem 36.287724rem 92.575449rem 157.378263rem;
+        width: 100%;
+        border: 1px solid #acacac;
+        @include borderRadius(277.726347rem);
+        margin-bottom: 129.605629rem;
+      }
+      .validation-msg {
+        width: 2385.761896rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: none;
+        transition: 0s;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        i {
+          margin-top: 46.287724rem;
+          width: 231.438622rem;
+          height: 231.438622rem;
+          position: relative;
+          display: block;
+          &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: url("../assets/img/icons/attention-red-cion.svg");
+            @include bg-props(contain, center, no-repeat);
+          }
+        }
+        .msg {
+          margin-left: 92.575449rem;
+          p {
+            line-height: 1.4;
+            &:nth-of-type(1) {
+              color: #df4661;
+              font-weight: $bold;
+              font-size: 111.090539rem;
+            }
+            &:nth-of-type(2) {
+              color: $brown;
+              font-weight: $bold;
+              font-size: 111.090539rem;
+            }
+            &:nth-of-type(3) {
+              color: $brown;
+              font-size: 92.575449rem;
+            }
+          }
+        }
+      }
+      button {
+        margin-top: 203.665988rem;
+        width: 1481.207184rem;
+        height: 361.044251rem;
+        padding: 0;
+        line-height: 1;
+        font-size: 111.090539rem;
+        box-shadow: 0px 46.287724rem 185.150898rem rgba(0, 0, 0, 0.33);
+        margin-bottom: 277.726347rem;
+      }
+    }
+  }
+  .no-account {
+    margin-top: 462.877245rem;
+    margin-bottom: 462.877245rem;
+    h3 {
+      font-size: 166.635808rem;
+      text-align: center;
+      margin-bottom: 175.893353rem;
+    }
+    a {
+      width: 1851.50898rem;
+      height: 361.044251rem;
+      line-height: 361.044251rem;
+      text-align: center;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 111.090539rem;
+      box-shadow: 0px 10px 30px rgba(0, 134, 117, 0.33);
+      padding: 0;
     }
   }
 }

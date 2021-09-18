@@ -53,7 +53,7 @@
     <!-- header -->
     <header id="masthead">
       <div class="container-fluid h-100">
-        <div class="row h-100">
+        <div class="row align-items-center">
           <div class="col-4">
             <a href="#!" id="menuTrigger">
               <span></span>
@@ -200,10 +200,61 @@
                 />
               </div>
             </form>
+            <form action="/account.html" id="change-pass">
+              <input
+                type="password"
+                name="oldPassword"
+                id="oldPassword"
+                placeholder="Old Password"
+                autocomplete="false"
+              />
+              <input
+                type="password"
+                name="newPassword"
+                id="newPassword"
+                placeholder="New Password"
+                autocomplete="false"
+              />
+              <input
+                type="password"
+                name="confirmNewPassword"
+                id="confirmNewPassword"
+                placeholder="Confirm New Password"
+                autocomplete="false"
+              />
+              <div class="form-btns">
+                <input
+                  type="submit"
+                  value="SALVA"
+                  class="save-user-info do-btn do-btn-green text-white"
+                />
+                <input
+                  type="reset"
+                  value="Annulla"
+                  class="cancel-user-info do-btn do-btn-green text-white"
+                />
+              </div>
+            </form>
             <div class="user-toolbar">
               <a href="#!" class="change-user-full-name">Modifica</a>
               <a href="#!" class="change-user-password">Cambia password</a>
             </div>
+          </div>
+          <div class="info-block border-0">
+            <h3 class="block-title">Codice azienda</h3>
+            <div class="editable-info">
+              <div class="content">
+                <p class="codice"><i></i>Codice azienda: <b>b42s182</b></p>
+              </div>
+            </div>
+
+            <a
+              href="#addAddressModal"
+              data-bs-toggle="modal"
+              data-bs-target="#addAddressModal"
+              class="add-new-block d-none"
+              >Aggiungi un nuovo indirizzo</a
+            >
           </div>
           <div class="info-block border-0">
             <h3 class="block-title">Indirizzi di consegna</h3>
@@ -217,27 +268,28 @@
                   20158, Milano<br />
                   Presso: Portiere
                 </p>
-                <p class="codice"><i></i>Codice azienda: <b>b42s182</b></p>
               </div>
               <a href="#!" class="add-to-fav"><i></i></a>
-              <a href="#!" class="remove-address"><i></i></a>
+              <a href="#!" class="remove-address d-none"><i></i></a>
               <div class="delete-confrimation">
                 <p>Are you sure you want to delete this?</p>
                 <a href="#!" data-delete="yes">Yes</a>
                 <a href="#!" data-delete="no">No</a>
               </div>
             </div>
-            <div class="editable-info editable-info-home">
+            <div
+              class="editable-info editable-info-has-fav editable-info-office"
+            >
               <div class="content">
-                <p class="fw-bold text-brown title">Casa</p>
+                <p class="fw-bold text-brown title">Ufficio 2</p>
                 <p>
-                  Via Giulio Cesare Procaccini 60 <br />
-                  20154, Milano<br />
-                  Presso: Citofono numero 45
+                  Viale Vincenzo Lancetti 40 <br />
+                  20158, Milano<br />
+                  Presso: Portiere
                 </p>
-                <p class="codice"><b>Modifica</b></p>
               </div>
-              <a href="#!" class="remove-address"><i></i></a>
+              <a href="#!" class="add-to-fav"><i></i></a>
+              <a href="#!" class="remove-address d-none"><i></i></a>
               <div class="delete-confrimation">
                 <p>Are you sure you want to delete this?</p>
                 <a href="#!" data-delete="yes">Yes</a>
@@ -248,33 +300,8 @@
               href="#addAddressModal"
               data-bs-toggle="modal"
               data-bs-target="#addAddressModal"
-              class="add-new-block"
+              class="add-new-block d-none"
               >Aggiungi un nuovo indirizzo</a
-            >
-          </div>
-          <div class="info-block border-0">
-            <h3 class="block-title">Metodo di pagamento</h3>
-            <div class="editable-info editable-info-office">
-              <div class="content">
-                <p class="fw-bold text-brown title">Carta di credito</p>
-                <p>
-                  Visa Electro ***9876 - scad. 31/01/2025 <br />
-                  Mario Rossi
-                </p>
-              </div>
-              <a href="#!" class="remove-address"><i></i></a>
-              <div class="delete-confrimation">
-                <p>Are you sure you want to delete this?</p>
-                <a href="#!" data-delete="yes">Yes</a>
-                <a href="#!" data-delete="no">No</a>
-              </div>
-            </div>
-            <a
-              href="#addPaymentModal"
-              data-bs-toggle="modal"
-              data-bs-target="#addPaymentModal"
-              class="add-new-block"
-              >Aggiungi un nuovo metodo di pagamento</a
             >
           </div>
         </div>
@@ -352,7 +379,7 @@
     <!-- Footer -->
     <footer class="site-footer">
       <div class="logo-wrapper">
-        <img src="./assets/img/logo.svg" alt="Erbert" />
+        <img src="./assets/img/logo-white.svg" alt="Erbert" />
       </div>
       <ul class="socials list-inline w-fit-content mx-auto">
         <li class="list-inline-item">
@@ -481,7 +508,8 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Main js -->
     <script src="./scripts/animations.js"></script>
     <script src="./scripts/main.js"></script>

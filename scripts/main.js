@@ -97,6 +97,48 @@ $(document).ready(function () {
       $(".user-info .form-btns").show();
       $(".user-toolbar").hide();
     });
+
+    $(".change-user-password").on("click", function (e) {
+      e.preventDefault();
+      $("form#change-pass").slideToggle();
+    });
+    $('form#change-pass input[type="submit"]').on("click", function (e) {
+      let oldPassField = $(this).parent().siblings("#oldPassword");
+      let newPassField = $(this).parent().siblings("#newPassword");
+      let confirmPass = $(this).parent().siblings("#confirmNewPassword");
+      let tempPass = "password";
+      e.preventDefault();
+      function checkForm() {
+        if (oldPassField.val() !== tempPass) {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Old Password is incorrect.",
+          });
+        } else if (newPassField.val().length < 5) {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Password is too short",
+          });
+        } else if (newPassField.val() !== confirmPass.val()) {
+          Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "New Passwords do not match.",
+          });
+        } else {
+          return true;
+        }
+      }
+
+      if (checkForm()) {
+        $(this).parent().parent().submit();
+      }
+    });
+    $('.form-btns input[type="reset"').on("click", function () {
+      $(this).parent().parent().slideToggle();
+    });
     $(".user-info .form-btns .cancel-user-info").on("click", function (e) {
       e.preventDefault();
       $(".user-full-name, .user-email").attr("readonly", true);
@@ -154,6 +196,25 @@ $(document).ready(function () {
       slidesToScroll: 1,
       variableWidth: true,
       mobileFirst: true,
+    });
+  }
+  // Registration/login
+  if ($("#registerWithCodice").length) {
+    $("#registerWithCodice button").on("click", function (e) {
+      e.preventDefault();
+      function codiceCheck() {
+        if ($("#codiceNumInput").val() === "123") {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      if (codiceCheck()) {
+        $("#registerWithCodice").submit();
+      } else {
+        $("#registerWithCodice .validation-msg").css("display", "flex");
+        $("#registerWithCodice input").css("border-color", "#df4661");
+      }
     });
   }
 });
