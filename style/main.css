@@ -2721,6 +2721,154 @@ a:focus {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
 }
+#masthead #mini-cart {
+  z-index: 999;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 2805.036104rem;
+  background: #fff;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.16);
+  transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  -webkit-transform-origin: right;
+  -moz-transform-origin: right;
+  transform-origin: right;
+}
+#masthead #mini-cart.active {
+  transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -webkit-transform-origin: right;
+  -moz-transform-origin: right;
+  transform-origin: right;
+  transition: transform 750ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -moz-transition: transform 750ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-transition: transform 750ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+#masthead #mini-cart .cart-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 83.317904rem 185.150898rem;
+}
+#masthead #mini-cart .cart-header .content {
+  position: relative;
+  padding-left: 296.241437rem;
+}
+#masthead #mini-cart .cart-header .content:before {
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0%, -50%);
+  -moz-transform: translate(0%, -50%);
+  -webkit-transform: translate(0%, -50%);
+  width: 267.357897rem;
+  height: 248.842807rem;
+  background: url("../assets/img/icons/cart-icon.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#masthead #mini-cart .cart-header .content p {
+  font-size: 138.863173rem;
+  color: #503629;
+  font-family: "Distro";
+  font-weight: 700;
+}
+#masthead #mini-cart .cart-header .content h5 {
+  font-size: 240.696167rem;
+  color: #137163;
+  font-family: "Distro";
+  font-weight: 700;
+  line-height: 0.8;
+}
+#masthead #mini-cart .cart-header .close-cart {
+  display: block;
+  position: relative;
+  width: 167rem;
+  height: 167rem;
+}
+#masthead #mini-cart .cart-header .close-cart span {
+  position: absolute;
+  display: inherit;
+  width: 100%;
+  height: 19rem;
+  top: 50%;
+  left: 50%;
+  background: #503629;
+}
+#masthead #mini-cart .cart-header .close-cart span:nth-of-type(1) {
+  transform: translate(-50%, -50%) rotate(45deg);
+  -moz-transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+}
+#masthead #mini-cart .cart-header .close-cart span:nth-of-type(2) {
+  transform: translate(-50%, -50%) rotate(-45deg);
+  -moz-transform: translate(-50%, -50%) rotate(-45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+}
+#masthead #mini-cart .cart-body {
+  max-height: 70vh;
+  overflow-y: auto;
+}
+#masthead #mini-cart .cart-body .single-cart-order {
+  padding: 115.719311rem 185.150898rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border-bottom: 1px solid #c1c1c1;
+}
+#masthead #mini-cart .cart-body .single-cart-order:first-of-type {
+  border-top: 1px solid #c1c1c1;
+}
+#masthead #mini-cart .cart-body .single-cart-order .img-wrapper {
+  width: 716.533975rem;
+  height: 716.533975rem;
+  margin-right: 157.378263rem;
+}
+#masthead #mini-cart .cart-body .single-cart-order .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+#masthead #mini-cart .cart-body .single-cart-order .content {
+  width: calc(100% - 716.533975rem - 157.378263rem);
+  padding-left: 46.287724rem;
+}
+#masthead #mini-cart .cart-body .single-cart-order .content h3 {
+  color: #503629;
+  font-size: 157.378263rem;
+  font-weight: 700;
+  margin-bottom: 43.510461rem;
+}
+#masthead #mini-cart .cart-body .single-cart-order .content h2 {
+  color: #f57120;
+  font-size: 203.665988rem;
+  font-weight: 700;
+  font-family: "Distro";
+}
+#masthead #mini-cart .cart-footer {
+  padding: 222.181078rem 0;
+}
+#masthead #mini-cart .cart-footer .do-btn {
+  width: 1481.207184rem;
+  height: 361.044251rem;
+  line-height: 361.044251rem;
+  padding: 0;
+  text-align: center;
+  box-shadow: 0px 92.575449rem 277.726347rem rgba(0, 134, 117, 0.33);
+  font-size: 111.090539rem;
+}
 
 #main-menu {
   width: 100%;

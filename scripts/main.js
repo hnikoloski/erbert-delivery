@@ -4,7 +4,14 @@ $(document).ready(function () {
     $("#main-menu").toggleClass("active");
     $("body").toggleClass("overflow-hidden");
   });
-
+  $("#cartTrigger, #mini-cart .close-cart, #main-menu .shopping-cart").on(
+    "click",
+    function (e) {
+      e.preventDefault();
+      $("#main-menu").removeClass("active"); // Close Main menu if opened
+      $("#mini-cart").toggleClass("active");
+    }
+  );
   // show Modal on load
   if (localStorage.getItem("cookieSeen") != "shown") {
     $("#splashModal").modal("show");
