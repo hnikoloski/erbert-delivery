@@ -1,0 +1,146 @@
+.menu-single-page {
+  padding-bottom: 277.726347rem;
+  .header {
+    background: $lime;
+    height: 648.028143rem;
+    background: #79b52d;
+    height: 648.028143rem;
+    @include borderRadius(50% 50% 0% 0% / 50% 50% 0% 0%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 324.014071rem;
+    &:before {
+      content: "";
+      position: absolute;
+      top: -324.014071rem;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../../assets/img/decorations/header-deco.jpg");
+      @include bg-props(150%, 40% 0, no-repeat);
+      z-index: -1;
+      pointer-events: none;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 111.090539rem;
+      font-weight: $semiBold;
+      color: $brown;
+      opacity: 0.8;
+      text-transform: uppercase;
+      i {
+        color: #fff;
+        font-size: 185.150898rem;
+        margin-right: 92.575449rem;
+      }
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .body {
+    padding-bottom: 370.301796rem;
+    background: $lime;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    &:before {
+      content: " ";
+      position: absolute;
+      inset: 0;
+      background: url("../assets/img/decorations/pattern-bg-lg.svg");
+      @include bg-props(cover, center, no-repeat);
+      z-index: -1;
+      pointer-events: none;
+    }
+  }
+  .basic-info {
+    padding-left: 305.498982rem;
+    padding-right: 305.498982rem;
+    margin-bottom: 250rem;
+    .type {
+      font-size: 416.58952rem;
+      font-weight: $bold;
+      color: #fff;
+      font-family: $distro;
+      line-height: 1;
+      margin-bottom: 46.287724rem;
+    }
+    .title {
+      color: $brown;
+      font-weight: $bold;
+      font-size: 185.150898rem;
+      text-transform: uppercase;
+    }
+    .kcal {
+      width: fit-content;
+      background: $green;
+      padding: 46.287724rem 138.863173rem;
+      box-shadow: 37.03018rem 37.03018rem 74.060359rem rgba(0, 0, 0, 0.29);
+      @include borderRadius(35px);
+      margin-bottom: 107.387521rem;
+      p {
+        font-family: $distro;
+        color: #fff;
+        font-size: 138.863173rem;
+        font-weight: $bold;
+      }
+    }
+    .img-wrap {
+      width: 972.042214rem;
+      height: 527.680059rem;
+      img {
+        @include fullSizeImg();
+      }
+    }
+  }
+  .add-to-cart-fixed {
+    width: 100%;
+    background: #fff;
+    border: 37.03018rem solid $orange;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    text-align: center;
+
+    border-top-left-radius: 324.014071rem;
+    -webkit-border-top-left-radius: 324.014071rem;
+    -moz-border-top-left-radius: 324.014071rem;
+    border-top-right-radius: 324.014071rem;
+    -webkit-border-top-right-radius: 324.014071rem;
+    -moz-border-top-right-radius: 324.014071rem;
+    p {
+      color: $brown;
+      font-size: 111.090539rem;
+      font-weight: $bold;
+      margin-top: 74.060359rem;
+      margin-bottom: 74.060359rem;
+    }
+    .do-btn {
+      display: block;
+      padding: 101.832994rem 601.740418rem 101.832994rem 286.983892rem;
+      width: fit-content;
+      margin: 0 auto 149.601926rem auto;
+      box-shadow: 0px 92.575449rem 277.726347rem rgba(0, 0, 0, 0.22);
+      i {
+        position: relative;
+        margin-left: 111.090539rem;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 222.181078rem;
+          height: 194.408443rem;
+          background: url("../assets/img/icons/add-to-cart-white.svg");
+          @include bg-props(contain, center, no-repeat);
+        }
+      }
+    }
+  }
+}
