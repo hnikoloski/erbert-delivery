@@ -268,6 +268,18 @@
       @include bg-props(contain, center, no-repeat);
     }
   }
+  .close-icon {
+    position: absolute;
+    top: 138.863173rem;
+    right: 138.863173rem;
+    i {
+      display: block;
+      width: 231.438622rem;
+      height: 231.438622rem;
+      background: url("../assets/img/icons/close-icon-orange.svg");
+      @include bg-props(contain, center, no-repeat);
+    }
+  }
   .item-title {
     color: $brown;
     font-size: 185.150898rem;

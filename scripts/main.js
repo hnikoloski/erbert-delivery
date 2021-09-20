@@ -1,4 +1,35 @@
 $(document).ready(function () {
+  // Temp
+  $(
+    ".single-menu-item .info-icon, .single-menu-item .close-icon,.has-options .alternatives"
+  ).on("click", function (e) {
+    e.preventDefault();
+    let classSwitch = "";
+
+    if ($(this).hasClass("alternatives")) {
+      $("#menuInfoModal").addClass("alternatives");
+
+      if ($(this).parent().hasClass("single-menu-item-fruit")) {
+        classSwitch = "single-menu-item-fruit";
+      } else if ($(this).parent().hasClass("single-menu-item-drink")) {
+        classSwitch = "single-menu-item-drink";
+      }
+
+      $("#menuInfoModal .single-menu-item-alternatives-options").removeClass(
+        "single-menu-item-drink single-menu-item-fruit"
+      );
+      $("#menuInfoModal .single-menu-item-alternatives-options").addClass(
+        classSwitch
+      );
+      $("#menuInfoModal .modal-content").addClass("overflow-visible");
+      $("#menuInfoModal").modal("toggle");
+    } else {
+      $("#menuInfoModal .modal-content").removeClass("overflow-visible");
+      $("#menuInfoModal").removeClass("alternatives");
+      $("#menuInfoModal").modal("toggle");
+    }
+  });
+
   $("#menuTrigger, #main-menu .close-menu").on("click", function (e) {
     e.preventDefault();
     $("#main-menu").toggleClass("active");
@@ -31,20 +62,20 @@ $(document).ready(function () {
   });
 
   // show Modal on load
-  if (localStorage.getItem("cookieSeen") != "shown") {
-    $("#splashModal").modal("show");
-    console.log(
-      "%c Where is your cookie ? :O ",
-      "background: #fff; color: #000"
-    );
+  // if (localStorage.getItem("cookieSeen") != "shown") {
+  //   $("#splashModal").modal("show");
+  //   console.log(
+  //     "%c Where is your cookie ? :O ",
+  //     "background: #fff; color: #000"
+  //   );
 
-    localStorage.setItem("cookieSeen", "shown");
-  } else {
-    console.log(
-      "%c You have a cookie! :) ",
-      "background: #000; color: #bada55"
-    );
-  }
+  //   localStorage.setItem("cookieSeen", "shown");
+  // } else {
+  //   console.log(
+  //     "%c You have a cookie! :) ",
+  //     "background: #000; color: #bada55"
+  //   );
+  // }
 
   // Formated Input Fields jump to next
   if ($(".formated-inputs").length) {
@@ -243,51 +274,61 @@ $(document).ready(function () {
     });
   }
   // jQuery Validation
-  $("#user-registration-form").validate({
-    rules: {
-      firstName: {
-        required: true,
-        minlength: 2,
+  if ($("#user-registration-form").length) {
+    $("#user-registration-form").validate({
+      rules: {
+        firstName: {
+          required: true,
+          minlength: 2,
+        },
+        lastName: {
+          required: true,
+          minlength: 2,
+        },
+        userEmail: {
+          required: true,
+          email: true,
+        },
+        userPassword: {
+          required: true,
+          minlength: 5,
+        },
+        userConfirmPassword: {
+          required: true,
+          minlength: 5,
+          equalTo: "#userPassword",
+        },
+        phoneNum: {
+          required: true,
+        },
       },
-      lastName: {
-        required: true,
-        minlength: 2,
+      messages: {
+        firstName: {
+          required: "Please insert your first name",
+          minlength: "Name must be at least 2 characters",
+        },
+        lastName: {
+          required: "Please insert your last name",
+          minlength: "Last must be at least 2 characters",
+        },
+        userPassword: {
+          required: "Please enter a password.",
+          minlength: "Your password must be atleast 5 characters.",
+        },
+        phoneNum: {
+          required: "Phone is required.",
+        },
+        userConfirmPassword: {
+          required: "Please enter a password confirmation.",
+          minlength: "Your password must be atleast 5 characters.",
+          equalTo: "Please enter the same password as above.",
+        },
       },
-      userEmail: {
-        required: true,
-        email: true,
-      },
-      userPassword: {
-        required: true,
-        minlength: 5,
-      },
-      userConfirmPassword: {
-        required: true,
-        minlength: 5,
-        equalTo: "#userPassword",
-      },
-    },
-    messages: {
-      firstName: {
-        required: "Please insert your first name",
-        minlength: "Name must be at least 2 characters",
-      },
-      lastName: {
-        required: "Please insert your last name",
-        minlength: "Last must be at least 2 characters",
-      },
-      userPassword: {
-        required: "Please enter a password.",
-        minlength: "Your password must be atleast 5 characters.",
-      },
-      userConfirmPassword: {
-        required: "Please enter a password confirmation.",
-        minlength: "Your password must be atleast 5 characters.",
-        equalTo: "Please enter the same password as above.",
-      },
-    },
-  });
+    });
+  }
   // Phone extension flags
-  let countryCodePhone = document.querySelector("#phoneNum");
-  window.intlTelInput(countryCodePhone);
+  if ($("#phoneNum").length) {
+    let countryCodePhone = document.querySelector("#phoneNum");
+    window.intlTelInput(countryCodePhone);
+  }
 });

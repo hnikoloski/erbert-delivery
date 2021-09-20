@@ -254,7 +254,6 @@
               <p>Primo</p>
             </div>
           </div>
-          <a href="#!" class="info-icon"><i></i></a>
           <div class="featured-img-wrap">
             <img
               src="./assets/img/dish-img.png"
@@ -279,7 +278,6 @@
               <p>Primo</p>
             </div>
           </div>
-          <a href="#!" class="info-icon"><i></i></a>
           <div class="featured-img-wrap">
             <img
               src="./assets/img/dish-img.png"
@@ -337,36 +335,186 @@
     <!-- Modal -->
     <div
       class="modal fade"
-      id="splashModal"
+      id="menuInfoModal"
       tabindex="-1"
       role="dialog"
-      aria-labelledby="splashModalTitle"
+      aria-labelledby="menuInfoModalTitle"
       aria-hidden="true"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
     >
       <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="logo-wrapper">
-            <img src="./assets/img/logo.svg" alt="Erbert" />
-          </div>
-          <p class="description">
-            Inserisci il tuo CAP e scopri se consegniamo già nella tua zona.
-          </p>
-          <form action="#">
-            <div class="formated-inputs">
-              <input type="number" maxlength="1" name="capNum" />
-              <input type="number" maxlength="1" name="capNum" />
-              <input type="number" maxlength="1" name="capNum" />
-              <input type="number" maxlength="1" name="capNum" />
-              <input type="number" maxlength="1" name="capNum" />
+        <div class="modal-content border-0 bg-transparent">
+          <div class="single-menu-item single-menu-item-full-info">
+            <div class="cat-wrapper">
+              <i></i>
+              <div class="title">
+                <p>Primo</p>
+              </div>
             </div>
-          </form>
-          <input
-            type="submit"
-            value="VERIFICA"
-            class="do-btn do-btn-green text-white submitForm"
-          />
+            <a href="#!" class="close-icon"><i></i></a>
+            <h3 class="item-title">Orecchiette al pesto di rucola</h3>
+            <p class="item-excerpt">Pasta fresca della tradizione pugliese</p>
+            <div class="info-wrapper">
+              <div class="img-wrap">
+                <img
+                  src="./assets/img/icons/magnia-badge.svg"
+                  alt="Mangia bene!"
+                />
+              </div>
+              <div class="kcal d-block"><p>198 kcal</p></div>
+            </div>
+            <div class="featured-img-wrap">
+              <img
+                src="./assets/img/dish-img.png"
+                alt="Orecchiette al pesto di rucola"
+              />
+            </div>
+
+            <div class="long-description">
+              <p>
+                <span class="fw-bold text-lime">Ti fa bene perchè:</span> la
+                rucola apporta minerali importanti per il buon funzionamento del
+                nostro corpo, come calcio, ferro e vitamine A e C. Completiamo
+                la preparazione del condimento usando pomodorini freschi e
+                pecorino.
+              </p>
+
+              <p>
+                <span class="fw-bold text-lime">Curiosità:</span> La rucola era
+                una pianta importante per gli antichi romani, che la usavano
+                come ingrediente principale per i loro “filtri d’amore”.
+              </p>
+
+              <p>
+                <span class="fw-bold text-orange"> Ingredienti: </span
+                >Orecchiette 42% (GLUTINE), Pesto di rucola 25% (olio evo,
+                parmigiano reggiano (LATTE, sale, caglio), olio semi girasole),
+                pecorino 18% (LATTE), Pomodorini 13%, olio evo 2%.
+              </p>
+              <p>
+                <span class="fw-bold text-orange">Allergeni: </span>GLUTINE,
+                LATTE
+              </p>
+              <div class="energy-vals">
+                <div>
+                  <p class="fw-bold text-brown">Energia (kJ)</p>
+                  <p class="text-green">1235</p>
+                </div>
+                <div>
+                  <p class="fw-bold text-brown">Energia (kcal)</p>
+                  <p class="text-green">298</p>
+                </div>
+                <div>
+                  <p class="fw-bold text-brown">Carboidrati (g)</p>
+                  <p class="text-green">1</p>
+                </div>
+                <div>
+                  <p class="fw-bold text-brown">di cui zuccheri (g)</p>
+                  <p class="text-green">1</p>
+                </div>
+                <div>
+                  <p class="fw-bold text-brown">Grassi (g)</p>
+                  <p class="text-green">24</p>
+                </div>
+                <div>
+                  <p class="fw-bold text-brown">di cui saturi (g)</p>
+                  <p class="text-green">17</p>
+                </div>
+                <div>
+                  <p class="fw-bold text-brown">Proteine (g)</p>
+                  <p class="text-green">18</p>
+                </div>
+                <div>
+                  <p class="fw-bold text-brown">Sale (g)</p>
+                  <p class="text-green">0,68</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="single-menu-item single-menu-item-alternatives-options">
+            <div class="cat-wrapper">
+              <i></i>
+              <div class="title">
+                <p>Primo</p>
+              </div>
+            </div>
+            <a href="#!" class="close-icon"><i></i></a>
+            <form action="menu-single-page.html">
+              <div class="form-group">
+                <input
+                  type="radio"
+                  id="fruit-1"
+                  name="fruit-alternatives"
+                  value="theID"
+                  checked
+                />
+                <label for="fruit-1">
+                  <div class="single-option">
+                    <div class="featured-img-wrapper">
+                      <img src="./assets/img/dish-img.png" alt="FRUIT NAME" />
+                    </div>
+                    <div class="content">
+                      <h3 class="title">Melone giallo</h3>
+                      <p class="excerpt">Selezionato da erbert</p>
+                      <div class="price">
+                        <div class="kcal d-block"><p>540 kcal</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="form-group">
+                <input
+                  type="radio"
+                  id="fruit-2"
+                  name="fruit-alternatives"
+                  value="theID"
+                />
+                <label for="fruit-2">
+                  <div class="single-option">
+                    <div class="featured-img-wrapper">
+                      <img src="./assets/img/dish-img.png" alt="FRUIT NAME" />
+                    </div>
+                    <div class="content">
+                      <h3 class="title">Melone giallo</h3>
+                      <p class="excerpt">Selezionato da erbert</p>
+                      <div class="price">
+                        <div class="kcal d-block"><p>21 kcal</p></div>
+                        <h4>+ € 2,90</h4>
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <div class="form-group">
+                <input
+                  type="radio"
+                  id="fruit-3"
+                  name="fruit-alternatives"
+                  value="theID"
+                />
+                <label for="fruit-3">
+                  <div class="single-option">
+                    <div class="featured-img-wrapper">
+                      <img src="./assets/img/dish-img.png" alt="FRUIT NAME" />
+                    </div>
+                    <div class="content">
+                      <h3 class="title">Melone giallo</h3>
+                      <p class="excerpt">Selezionato da erbert</p>
+                      <div class="price">
+                        <div class="kcal d-block"><p>21 kcal</p></div>
+                        <h4>+ € 2,90</h4>
+                      </div>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <input
+                type="submit"
+                value="CONFERMA"
+                class="do-btn do-btn-green text-white fw-bold text-uppercase"
+              />
+            </form>
+          </div>
         </div>
       </div>
     </div>

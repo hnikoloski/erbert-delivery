@@ -37,6 +37,12 @@ $distro: "Distro";
     color: inherit;
   }
 }
+.text-orange {
+  color: $orange;
+  &:hover {
+    color: inherit;
+  }
+}
 .text-lorange {
   color: $lorange;
   &:hover {
