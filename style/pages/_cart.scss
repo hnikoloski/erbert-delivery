@@ -1,0 +1,174 @@
+.top-clock {
+  display: none;
+}
+body.has-clock {
+  .top-clock {
+    display: block;
+    width: 95%;
+    background: #f1e6b2;
+    padding: 92.575449rem 138.863173rem;
+    margin-left: auto;
+    border-top-left-radius: 324.014071rem;
+    -webkit-border-top-left-radius: 324.014071rem;
+    -moz-border-top-left-radius: 324.014071rem;
+
+    border-bottom-left-radius: 324.014071rem;
+    -moz-border-bottom-left-radius: 324.014071rem;
+    -webkit-border-bottom-left-radius: 324.014071rem;
+    &.expired {
+      .content {
+        display: none;
+        &-expired {
+          display: flex;
+        }
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: center;
+      padding-left: 400rem;
+      position: relative;
+      &-expired {
+        display: none;
+      }
+      &:before {
+        content: " ";
+        position: absolute;
+        left: 50rem;
+        @include ver-center();
+        width: 231.438622rem;
+        height: 231.438622rem;
+        background: url("../assets/img/icons/attention-icon.svg");
+        @include bg-props(contain, center, no-repeat);
+      }
+      p {
+        font-size: 111.090539rem;
+        &.end-msg {
+          max-width: 925.75449rem;
+        }
+      }
+      .img-wrapper {
+        width: 458.433623rem;
+        height: 305.498982rem;
+        margin-left: 111.090539rem;
+        margin-right: 101.090539rem;
+        img {
+          @include fullSizeImg();
+        }
+      }
+      h4 {
+        color: $brown;
+        font-size: 296.241437rem;
+        font-weight: $bold;
+        margin-left: 111.090539rem;
+        margin-right: 111.090539rem;
+      }
+    }
+  }
+}
+.cart-hero {
+  margin-bottom: 74.060359rem;
+  .content {
+    padding-left: 444.362155rem;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      @include ver-center();
+      width: 361.044251rem;
+      height: 328.735419rem;
+      background: url("../assets/img/icons/cart-icon.svg");
+      @include bg-props(contain, center, no-repeat);
+    }
+    h3 {
+      font-size: 166.635808rem;
+      line-height: 1;
+    }
+    h2 {
+      line-height: 1;
+      font-size: 268.468802rem;
+    }
+  }
+}
+.cart {
+  &-layout-wrap {
+    width: 2805.036104rem;
+    margin-left: auto;
+    margin-right: auto;
+    .buttons-wrap {
+      text-align: center;
+      a {
+        width: 2055.174968rem;
+        margin-left: auto;
+        margin-right: auto;
+        height: 573.967784rem;
+        line-height: 573.967784rem;
+        padding: 0;
+        font-size: 148.120718rem;
+        margin-bottom: 277.726347rem;
+        box-shadow: 0px 92.575449rem 277.726347rem rgba(0, 0, 0, 0.22);
+        &.do-btn-green {
+          height: 361.044251rem;
+          line-height: 361.044251rem;
+          font-size: 111.090539rem;
+          margin-bottom: 740.603592rem;
+          box-shadow: 0px 92.575449rem 277.726347rem rgba(0, 134, 117, 0.33);
+        }
+      }
+    }
+  }
+  &-prices {
+    border: 1px solid $brown;
+    @include borderRadius(231.438622rem);
+    padding: 324.014071rem 138.863173rem;
+    margin-bottom: 398.074431rem;
+    .total-price {
+      margin-top: 194.408443rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: row;
+      .label {
+        font-size: 166.635808rem;
+        color: #151515;
+        font-weight: $bold;
+      }
+      .value {
+        font-family: $distro;
+        color: $orange;
+        font-size: 231.438622rem;
+        font-weight: $bold;
+      }
+    }
+  }
+  &-article-price {
+    padding-bottom: 46.287724rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-bottom: 1px solid #c1c1c1;
+    .label {
+      color: #151515;
+      font-size: 129.605629rem;
+    }
+    .value {
+      font-weight: $bold;
+      font-family: $distro;
+      color: $green;
+      font-size: 166.635808rem;
+    }
+  }
+  &-orders {
+    margin-bottom: 314.756527rem;
+  }
+}

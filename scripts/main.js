@@ -343,4 +343,62 @@ $(document).ready(function () {
       }
     );
   }
+
+  // Countdown
+  var myreset = [19, 43, 00]; // at what time to reset - 19:40:00
+
+  // Added myCountDownDiv variable to prevent jquery from walking the DOM o every update
+  var myCountDownDiv = document.getElementById("countdown");
+
+  var mycountdown = startCountdown();
+
+  function startCountdown() {
+    var enddate = calculateEndDate();
+    return setInterval(function () {
+      tickTock(calculateStartDate(), enddate);
+    }, 1000);
+  }
+  function calculateStartDate() {
+    //this needs to be edited if using the server time
+    return new Date();
+  }
+  function calculateEndDate() {
+    var enddate = new Date();
+    enddate.setHours(myreset[0]);
+    enddate.setMinutes(myreset[1]);
+    enddate.setSeconds(myreset[2]);
+    return enddate;
+  }
+  function tickTock(startdate, enddate) {
+    var diff = enddate.getTime() - startdate.getTime();
+    d = diff >= 0 ? diff : diff + 24 * 3600 * 1000;
+    var h = Math.floor(d / 3600 / 1000);
+    var m = Math.floor(d / 60 / 1000) - 60 * h;
+    var s = Math.floor(d / 1000) - 3600 * h - 60 * m;
+    if (m < 11) {
+      $(".top-clock").removeClass("expired");
+      printCountdown(h, m, s);
+    } else {
+      $(".top-clock").addClass("expired");
+    }
+  }
+
+  function printCountdown(h, m, s) {
+    var t = h + ":" + m + ":" + s;
+
+    myCountDownDiv.innerText = t;
+  }
+  // Checkout Tabs
+
+  if ($(".checkout-tabs").length) {
+    $(".checkout-tabs a, .go-to-payment").on("click", function (e) {
+      e.preventDefault();
+      $(".checkout-tabs a").removeClass("active");
+      $(this).addClass("active");
+
+      let selectedTab = $(this).attr("data-target");
+      $(".checkout-tabs-content-single").fadeOut(100);
+      $("#" + selectedTab).fadeIn(1000);
+    });
+  }
 });

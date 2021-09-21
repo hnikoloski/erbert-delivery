@@ -1,0 +1,250 @@
+.checkout {
+  &-wrapper {
+    width: 2805.036104rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &-tabs {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-end;
+    .divider {
+      height: 2px;
+      width: 100%;
+      margin: 0 10%;
+      background: #cacaca;
+      margin-bottom: 64.802814rem;
+    }
+    a {
+      font-size: 111.090539rem;
+      color: $brown;
+      text-align: center;
+      &.active {
+        font-weight: $bold;
+      }
+      i {
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 27.772635rem;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      &.address {
+        i {
+          width: 252.545825rem;
+          height: 159.785225rem;
+          &:before {
+            background: url("../assets/img/icons/truck-icon.svg");
+            @include bg-props(contain, center, no-repeat);
+          }
+        }
+      }
+      &.payment {
+        i {
+          width: 259.211257rem;
+          height: 152.842066rem;
+          &:before {
+            background: url("../assets/img/icons/payment-icon.svg");
+            @include bg-props(contain, center, no-repeat);
+          }
+        }
+      }
+    }
+    &-content {
+      margin-top: 370.301796rem;
+      &-single {
+        transition: 0s;
+        display: none;
+        &.active {
+          display: block;
+        }
+        .block-title {
+          color: $brown;
+          font-family: "Poppins";
+          padding-bottom: 92.575449rem;
+          border-bottom: 1px solid #c1c1c1;
+          margin-bottom: 225.884096rem;
+          font-size: 129.605629rem;
+        }
+        .info-block .editable-info {
+          flex-wrap: wrap;
+          .break {
+            flex-basis: 100%;
+            height: 0;
+          }
+          .shipping-info {
+            margin-top: 194.408443rem;
+            font-size: 111.090539rem;
+            padding-left: 314.756527rem;
+            position: relative;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              @include ver-center();
+              width: 249.953712rem;
+              height: 157.378263rem;
+              background: url("../assets/img/icons/shipping-truck-icon.svg");
+              @include bg-props(contain, center, no-repeat);
+            }
+            .price {
+              &-regular {
+                font-family: $distro;
+                font-size: 111.090539rem;
+                font-weight: $bold;
+                color: $brown;
+                text-decoration: line-through;
+              }
+              &-discount {
+                color: $orange;
+                font-size: 129.605629rem;
+                font-weight: $bold;
+                font-family: $distro;
+              }
+            }
+          }
+        }
+        .go-to-payment {
+          display: block;
+          margin: 0 auto 833.179041rem auto;
+          text-align: center;
+          width: fit-content;
+        }
+        &#payment-content {
+          form {
+            .radios {
+              margin-bottom: 370.301796rem;
+              border-bottom: 1px solid black;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              justify-content: space-around;
+              align-items: center;
+              align-content: center;
+            }
+            .form-group {
+              display: block;
+              margin-bottom: 15px;
+
+              input {
+                padding: 0;
+                height: initial;
+                width: initial;
+                margin-bottom: 0;
+                display: none;
+                cursor: pointer;
+              }
+
+              label {
+                position: relative;
+                cursor: pointer;
+                padding-bottom: 403.527125rem;
+                &:before {
+                  content: "";
+                  -webkit-appearance: none;
+                  background-color: transparent;
+                  border: 1px solid #707070;
+                  @include borderRadius(50%);
+                  width: 240.696167rem;
+                  height: 240.696167rem;
+                  position: absolute;
+                  @include hor-center();
+                  bottom: 0;
+                  cursor: pointer;
+                }
+                i {
+                  display: block;
+                  width: 573.967784rem;
+                  height: 333.271616rem;
+                  position: relative;
+                  margin-bottom: 83.317904rem;
+                  margin-left: auto;
+                  margin-right: auto;
+                  &:before {
+                    content: " ";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+                &.cc-card {
+                  i {
+                    &:before {
+                      background: url("../assets/img/icons/cc-payment-icon.svg");
+                      @include bg-props(contain, center, no-repeat);
+                    }
+                  }
+                }
+                &.ticket-res {
+                  i {
+                    &:before {
+                      background: url("../assets/img/icons/ticket-payment-icon.svg");
+                      @include bg-props(contain, center, no-repeat);
+                    }
+                  }
+                }
+                p {
+                  font-size: 111.090539rem;
+                  color: $brown;
+                  font-weight: $bold;
+                  text-align: center;
+                }
+              }
+
+              input:checked + label:after {
+                content: "";
+                position: absolute;
+                @include hor-center();
+                bottom: 44rem;
+                background: $lime;
+                @include borderRadius(50%);
+                width: 148.120718rem;
+                height: 148.120718rem;
+              }
+              input:disabled + label {
+                &:after {
+                  content: "COMING SOON";
+                  font-size: 111.090539rem;
+                  font-weight: $bold;
+                  font-family: $distro;
+                  text-align: center;
+                  opacity: 1;
+                  color: $orange;
+                  position: absolute;
+                  @include hor-center();
+                  bottom: 200rem;
+                  width: 130%;
+                }
+                i,
+                p {
+                  opacity: 0.35;
+                }
+                &:before {
+                  display: none;
+                }
+              }
+            }
+            .form-submit {
+              text-align: center;
+              width: 2610.627662rem;
+              margin-bottom: 740.603592rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

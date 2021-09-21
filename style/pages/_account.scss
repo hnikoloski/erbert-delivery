@@ -366,6 +366,205 @@
     }
   }
 }
+.editable-info {
+  transition: 0s;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  position: relative;
+  border-bottom: 1px solid #f1e6b2;
+  padding-bottom: 222.181078rem;
+  // margin-bottom: 222.181078rem;
+
+  .no-address {
+    font-size: 166.635808rem;
+    margin-bottom: 138.863173rem;
+    text-align: center;
+  }
+  &.waiting {
+    .remove-address {
+      display: none;
+    }
+    &:before {
+      content: " ";
+      position: absolute;
+      @include borderRadius(46.287724rem);
+      @include abs-center();
+      width: 105%;
+      height: 101%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+  .remove-address {
+    i {
+      width: 175.3379rem;
+      height: 187.002407rem;
+      display: block;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../../assets/img/icons/trash-icon.svg");
+        @include bg-props(contain, center, no-repeat);
+      }
+    }
+  }
+  .delete-confrimation {
+    display: none;
+    text-align: center;
+    padding: 185.150898rem 324.014071rem;
+    width: 100%;
+    position: absolute;
+    @include abs-center();
+    background: #fff;
+    box-shadow: 0 27.772635rem 55.545269rem rgb(121, 181, 45, 0.3);
+    @include borderRadius(277.726347rem);
+
+    p {
+      font-size: 148.120718rem;
+      font-weight: $bold;
+      font-family: $distro;
+      text-align: center;
+      margin-bottom: 185.150898rem;
+    }
+    a {
+      font-size: 129.605629rem;
+      color: #fff;
+      padding: 37.03018rem 92.575449rem;
+      background: $green;
+      &:last-of-type {
+        background: #dc3545;
+        margin-left: 92.575449rem;
+      }
+    }
+  }
+  .content {
+    width: 2443.991853rem;
+    p {
+      line-height: 1.58333333;
+      font-weight: $regular;
+      color: $brown;
+      font-size: 111.090539rem;
+      &.codice {
+        margin-top: 94.426958rem;
+        i {
+          display: inline-block;
+          position: relative;
+          width: 338.733568rem;
+          height: 121.458989rem;
+          top: 18.51509rem;
+          margin-right: 60.174042rem;
+          &:before {
+            content: " ";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: url("../../assets/img/icons/hidden-icon.svg");
+            @include bg-props(contain, center, no-repeat);
+          }
+        }
+      }
+    }
+  }
+  &-single-order {
+    &:first-of-type {
+      margin-top: 201.814479rem;
+    }
+    padding-top: 222.181078rem;
+    .img-wrapper {
+      width: 790.594334rem;
+      height: 790.594334rem;
+      margin-right: 277.726347rem;
+      img {
+        @include fullSizeImg();
+      }
+    }
+    .content {
+      width: 1675.615627rem;
+      .order-date {
+        font-size: 111.090539rem;
+        font-weight: $bold;
+        color: $brown;
+        margin-bottom: 81.466395rem;
+      }
+      .dish-title {
+        font-size: 138.863173rem;
+        font-weight: $bold;
+        text-transform: uppercase;
+      }
+      .order-price {
+        color: $orange;
+        font-weight: $bold;
+        font-size: 203.665988rem;
+        font-family: $distro;
+        display: flex;
+        align-items: center;
+        i {
+          display: inline-block;
+          position: relative;
+          width: 278.559526rem;
+          height: 278.559526rem;
+          margin-left: 124.976856rem;
+          &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: url("../../assets/img/icons/erbert-refresh-icon.svg");
+            @include bg-props(contain, center, no-repeat);
+          }
+        }
+      }
+    }
+  }
+  &-has-fav {
+    .add-to-fav {
+      &:active {
+        -webkit-transform: scale(0.7);
+        -moz-transform: scale(0.7);
+        -o-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+        transform: scale(0.7);
+      }
+      i {
+        z-index: -1;
+        display: block;
+        position: relative;
+        width: 240.696167rem;
+        height: 213.756712rem;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background: url("../../assets/img/icons/fav-icon.svg");
+          @include bg-props(contain, center, no-repeat);
+        }
+      }
+      &.active {
+        i {
+          &:before {
+            background: url("../../assets/img/icons/fav-icon-active.svg");
+            @include bg-props(contain, center, no-repeat);
+          }
+        }
+      }
+    }
+  }
+  &-office {
+    margin-bottom: 203.665988rem;
+  }
+}
 .add-new-block {
   font-size: 111.090539rem;
   font-weight: $bold;
