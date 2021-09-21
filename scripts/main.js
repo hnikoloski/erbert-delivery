@@ -330,5 +330,17 @@ $(document).ready(function () {
   if ($("#phoneNum").length) {
     let countryCodePhone = document.querySelector("#phoneNum");
     window.intlTelInput(countryCodePhone);
+    $("#user-registration-form .input-grp .iti--allow-dropdown").on(
+      "click",
+      function () {
+        $("ul .iti__country").on("click", function (e) {
+          let extNumber = $(this).children(".iti__dial-code").text();
+          $("#phoneNum").val("");
+          $("#phoneNum").val(function () {
+            return extNumber + this.value;
+          });
+        });
+      }
+    );
   }
 });
